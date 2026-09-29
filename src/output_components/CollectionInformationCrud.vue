@@ -23,8 +23,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"   required v-model="form['id']" class="input input-bordered w-full validator" :placeholder="getLabel('id', 'e.g. DE-MUS-814111', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"     required v-model="form['id']" class="input input-bordered w-full validator " :placeholder="getLabel('id', 'e.g. DE-MUS-814111', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="col-span-full border-2 border-base-200 bg-base-100 p-4 rounded-box mb-6 shadow-sm">
@@ -112,8 +112,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"   required v-model="form['source']" class="input input-bordered w-full validator" :placeholder="getLabel('source', 'e.g. Stiftung Preußischer Kulturbesitz, Staatliche Museen zu Berlin, Collection of Classical Antiquities', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"     required v-model="form['source']" class="input input-bordered w-full validator " :placeholder="getLabel('source', 'e.g. Stiftung Preußischer Kulturbesitz, Staatliche Museen zu Berlin, Collection of Classical Antiquities', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="col-span-full border-2 border-base-200 bg-base-100 p-4 rounded-box mb-6 shadow-sm">
@@ -185,8 +185,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"   required v-model="form['rights.copyrightCreditLine']" class="input input-bordered w-full validator" :placeholder="getLabel('rights.copyrightCreditLine', 'e.g. Staatliche Museen zu Berlin, Antikensammlung, 2025', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"     required v-model="form['rights.copyrightCreditLine']" class="input input-bordered w-full validator " :placeholder="getLabel('rights.copyrightCreditLine', 'e.g. Staatliche Museen zu Berlin, Antikensammlung, 2025', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -378,8 +378,8 @@
               </button>
               </div>
               </div>
-                        <input type="date" :max="maxDate"   v-model="form['creation.createdOn']" class="input input-bordered w-full validator" :placeholder="getLabel('creation.createdOn', 'e.g. 2025-01-30', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="date" :max="maxDate"     v-model="form['creation.createdOn']" class="input input-bordered w-full validator " :placeholder="getLabel('creation.createdOn', 'e.g. 2025-01-30', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -497,8 +497,8 @@
               </button>
               </div>
               </div>
-                        <input type="date" :max="maxDate"   v-model="form['coverage.temporal.timeSpan.startDate']" class="input input-bordered w-full validator" :placeholder="getLabel('coverage.temporal.timeSpan.startDate', 'e.g. -0500 (fifth century BCE)', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"    pattern='^(-?[0-9]{4,})(?:-(0[1-9]|1[0-2])(?:-(0[1-9]|[12][0-9]|3[01]))?)?$'  v-model="form['coverage.temporal.timeSpan.startDate']" class="input input-bordered w-full validator " :placeholder="getLabel('coverage.temporal.timeSpan.startDate', 'e.g. -0500 (fifth century BCE)', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -515,8 +515,8 @@
               </button>
               </div>
               </div>
-                        <input type="date" :max="maxDate"   v-model="form['coverage.temporal.timeSpan.endDate']" class="input input-bordered w-full validator" :placeholder="getLabel('coverage.temporal.timeSpan.endDate', 'e.g. -0400 (fourth century BCE)', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"    pattern='^(-?[0-9]{4,})(?:-(0[1-9]|1[0-2])(?:-(0[1-9]|[12][0-9]|3[01]))?)?$'  v-model="form['coverage.temporal.timeSpan.endDate']" class="input input-bordered w-full validator " :placeholder="getLabel('coverage.temporal.timeSpan.endDate', 'e.g. -0400 (fourth century BCE)', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -533,8 +533,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="form['coverage.temporal.timeSpan.dateRangeQualifier']" class="input input-bordered w-full validator" :placeholder="getLabel('coverage.temporal.timeSpan.dateRangeQualifier', '', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="form['coverage.temporal.timeSpan.dateRangeQualifier']" class="input input-bordered w-full validator " :placeholder="getLabel('coverage.temporal.timeSpan.dateRangeQualifier', '', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
           </div>
@@ -568,8 +568,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="form['coverage.temporal.scientificDate']" class="input input-bordered w-full validator" :placeholder="getLabel('coverage.temporal.scientificDate', '', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="form['coverage.temporal.scientificDate']" class="input input-bordered w-full validator " :placeholder="getLabel('coverage.temporal.scientificDate', '', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -680,7 +680,7 @@
              <li v-for="(subItem, subIdx) in form['coverage.spatial.locationSet.namedLocation']" :key="subIdx" class="list-row flex items-center justify-between h-auto py-2">
                 <div v-if="!inlineEditing['coverage.spatial.locationSet.namedLocation_' + subIdx]">{{ subItem }}</div>
                  <div v-else class="flex-1 mr-4">
-                   <input type="text"     v-model="form['coverage.spatial.locationSet.namedLocation'][subIdx]" class="input input-sm input-bordered w-full validator" :placeholder="getLabel('coverage.spatial.locationSet.namedLocation', '', 'plac')" />
+                   <input type="text"        v-model="form['coverage.spatial.locationSet.namedLocation'][subIdx]" class="input input-sm input-bordered w-full validator " :placeholder="getLabel('coverage.spatial.locationSet.namedLocation', '', 'plac')" />
                    <div class="validator-hint text-xs mt-1">Enter valid value</div>
                  </div>
                 <div class="flex gap-1 shrink-0">
@@ -731,8 +731,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="form['coverage.spatial.locationSet.address.buildingName']" class="input input-bordered w-full validator" :placeholder="getLabel('coverage.spatial.locationSet.address.buildingName', '', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="form['coverage.spatial.locationSet.address.buildingName']" class="input input-bordered w-full validator " :placeholder="getLabel('coverage.spatial.locationSet.address.buildingName', '', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -749,8 +749,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="form['coverage.spatial.locationSet.address.numberInRoad']" class="input input-bordered w-full validator" :placeholder="getLabel('coverage.spatial.locationSet.address.numberInRoad', '', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="form['coverage.spatial.locationSet.address.numberInRoad']" class="input input-bordered w-full validator " :placeholder="getLabel('coverage.spatial.locationSet.address.numberInRoad', '', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -767,8 +767,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="form['coverage.spatial.locationSet.address.roadName']" class="input input-bordered w-full validator" :placeholder="getLabel('coverage.spatial.locationSet.address.roadName', '', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="form['coverage.spatial.locationSet.address.roadName']" class="input input-bordered w-full validator " :placeholder="getLabel('coverage.spatial.locationSet.address.roadName', '', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -785,8 +785,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="form['coverage.spatial.locationSet.address.townOrCity']" class="input input-bordered w-full validator" :placeholder="getLabel('coverage.spatial.locationSet.address.townOrCity', '', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="form['coverage.spatial.locationSet.address.townOrCity']" class="input input-bordered w-full validator " :placeholder="getLabel('coverage.spatial.locationSet.address.townOrCity', '', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -803,8 +803,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="form['coverage.spatial.locationSet.address.postcodeOrZipcode']" class="input input-bordered w-full validator" :placeholder="getLabel('coverage.spatial.locationSet.address.postcodeOrZipcode', '', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="form['coverage.spatial.locationSet.address.postcodeOrZipcode']" class="input input-bordered w-full validator " :placeholder="getLabel('coverage.spatial.locationSet.address.postcodeOrZipcode', '', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -1353,8 +1353,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="form['coverage.spatial.locationSet.geopoliticalArea']" class="input input-bordered w-full validator" :placeholder="getLabel('coverage.spatial.locationSet.geopoliticalArea', '', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="form['coverage.spatial.locationSet.geopoliticalArea']" class="input input-bordered w-full validator " :placeholder="getLabel('coverage.spatial.locationSet.geopoliticalArea', '', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -1371,8 +1371,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="form['coverage.spatial.locationSet.geopoliticalAreaType']" class="input input-bordered w-full validator" :placeholder="getLabel('coverage.spatial.locationSet.geopoliticalAreaType', '', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="form['coverage.spatial.locationSet.geopoliticalAreaType']" class="input input-bordered w-full validator " :placeholder="getLabel('coverage.spatial.locationSet.geopoliticalAreaType', '', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -1389,8 +1389,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="form['coverage.spatial.locationSet.cadastralReference']" class="input input-bordered w-full validator" :placeholder="getLabel('coverage.spatial.locationSet.cadastralReference', '', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="form['coverage.spatial.locationSet.cadastralReference']" class="input input-bordered w-full validator " :placeholder="getLabel('coverage.spatial.locationSet.cadastralReference', '', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="col-span-full border-2 border-base-200 bg-base-100 p-4 rounded-box mb-6 shadow-sm">
@@ -1415,7 +1415,7 @@
              <li v-for="(subItem, subIdx) in form['coverage.spatial.locationSet.historicalName']" :key="subIdx" class="list-row flex items-center justify-between h-auto py-2">
                 <div v-if="!inlineEditing['coverage.spatial.locationSet.historicalName_' + subIdx]">{{ subItem }}</div>
                  <div v-else class="flex-1 mr-4">
-                   <input type="text"     v-model="form['coverage.spatial.locationSet.historicalName'][subIdx]" class="input input-sm input-bordered w-full validator" :placeholder="getLabel('coverage.spatial.locationSet.historicalName', '', 'plac')" />
+                   <input type="text"        v-model="form['coverage.spatial.locationSet.historicalName'][subIdx]" class="input input-sm input-bordered w-full validator " :placeholder="getLabel('coverage.spatial.locationSet.historicalName', '', 'plac')" />
                    <div class="validator-hint text-xs mt-1">Enter valid value</div>
                  </div>
                 <div class="flex gap-1 shrink-0">
@@ -1465,7 +1465,7 @@
              <li v-for="(subItem, subIdx) in form['dcRelation']" :key="subIdx" class="list-row flex items-center justify-between h-auto py-2">
                 <div v-if="!inlineEditing['dcRelation_' + subIdx]">{{ subItem }}</div>
                  <div v-else class="flex-1 mr-4">
-                   <input type="url"    pattern="[Hh][Tt][Tt][Pp][Ss]?://(?:(?:[a-zA-Z¡-￿0-9]+-?)*[a-zA-Z¡-￿0-9]+)(?:.(?:[a-zA-Z¡-￿0-9]+-?)*[a-zA-Z¡-￿0-9]+)*(?:.(?:[a-zA-Z¡-￿]{2,}))(?::d{2,5})?(?:/[^s]*)?" v-model="form['dcRelation'][subIdx]" class="input input-sm input-bordered w-full validator" :placeholder="getLabel('dcRelation', 'e.g. https://www.smb.museum/museen-einrichtungen/antikensammlung/home/', 'plac')" />
+                   <input type="url"     pattern="[Hh][Tt][Tt][Pp][Ss]?://(?:(?:[a-zA-Z¡-￿0-9]+-?)*[a-zA-Z¡-￿0-9]+)(?:.(?:[a-zA-Z¡-￿0-9]+-?)*[a-zA-Z¡-￿0-9]+)*(?:.(?:[a-zA-Z¡-￿]{2,}))(?::d{2,5})?(?:/[^s]*)?"   v-model="form['dcRelation'][subIdx]" class="input input-sm input-bordered w-full validator " :placeholder="getLabel('dcRelation', 'e.g. https://www.smb.museum/museen-einrichtungen/antikensammlung/home/', 'plac')" />
                    <div class="validator-hint text-xs mt-1">Enter valid value</div>
                  </div>
                 <div class="flex gap-1 shrink-0">
@@ -1545,8 +1545,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="drawerForm['name']" class="input input-bordered w-full validator" :placeholder="getLabel('contacts.name', 'e.g. John Doe', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="drawerForm['name']" class="input input-bordered w-full validator " :placeholder="getLabel('contacts.name', 'e.g. John Doe', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -1592,8 +1592,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"   required v-model="drawerForm['organization']" class="input input-bordered w-full validator" :placeholder="getLabel('contacts.organization', 'e.g. Stiftung Preußischer Kulturbesitz, Staatliche Museen zu Berlin', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"     required v-model="drawerForm['organization']" class="input input-bordered w-full validator " :placeholder="getLabel('contacts.organization', 'e.g. Stiftung Preußischer Kulturbesitz, Staatliche Museen zu Berlin', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -1610,8 +1610,8 @@
               </button>
               </div>
               </div>
-                        <input type="email"    v-model="drawerForm['email']" class="input input-bordered w-full validator" :placeholder="getLabel('contacts.email', 'e.g. person@institution.com', 'plac')" />
-              <div class="validator-hint">t('validationEmail')</div>        
+                        <input type="email"      v-model="drawerForm['email']" class="input input-bordered w-full validator " :placeholder="getLabel('contacts.email', 'e.g. person@institution.com', 'plac')" />
+              <div class="validator-hint">{{t('validationEmail')}}</div>        
           
           </div>
         <div class="col-span-full border border-base-300 bg-base-100/50 p-5 rounded-box mb-6 mt-2">
@@ -1646,8 +1646,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="drawerForm['address.buildingName']" class="input input-bordered w-full validator" :placeholder="getLabel('contacts.address.buildingName', 'e.g. Generaldirektion', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="drawerForm['address.buildingName']" class="input input-bordered w-full validator " :placeholder="getLabel('contacts.address.buildingName', 'e.g. Generaldirektion', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -1664,8 +1664,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="drawerForm['address.numberInRoad']" class="input input-bordered w-full validator" :placeholder="getLabel('contacts.address.numberInRoad', 'e.g. 41', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="drawerForm['address.numberInRoad']" class="input input-bordered w-full validator " :placeholder="getLabel('contacts.address.numberInRoad', 'e.g. 41', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -1682,8 +1682,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="drawerForm['address.roadName']" class="input input-bordered w-full validator" :placeholder="getLabel('contacts.address.roadName', 'e.g. Stauffenbergstr.', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="drawerForm['address.roadName']" class="input input-bordered w-full validator " :placeholder="getLabel('contacts.address.roadName', 'e.g. Stauffenbergstr.', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -1700,8 +1700,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="drawerForm['address.townOrCity']" class="input input-bordered w-full validator" :placeholder="getLabel('contacts.address.townOrCity', 'e.g. Berlin', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="drawerForm['address.townOrCity']" class="input input-bordered w-full validator " :placeholder="getLabel('contacts.address.townOrCity', 'e.g. Berlin', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -1718,8 +1718,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="drawerForm['address.postcodeOrZipcode']" class="input input-bordered w-full validator" :placeholder="getLabel('contacts.address.postcodeOrZipcode', 'e.g. 10785', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="drawerForm['address.postcodeOrZipcode']" class="input input-bordered w-full validator " :placeholder="getLabel('contacts.address.postcodeOrZipcode', 'e.g. 10785', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">

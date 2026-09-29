@@ -116,11 +116,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": [
-        "Dokumentar",
-        "Projektleitung",
-        "Kurator"
-      ],
+      "enumerations": ["Dokumentar", "Projektleitung", "Kurator"],
       "documentation": "The particular role played by the person or organization",
       "nameEN": "Role",
       "nameDE": "Rolle",
@@ -343,10 +339,7 @@
           "value": "iso31661a2"
         }
       ],
-      "enumerations": [
-        "en",
-        "de"
-      ],
+      "enumerations": ["en", "de"],
       "documentation": "",
       "nameEN": "Country",
       "nameDE": "Land",
@@ -438,10 +431,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": [
-        "Open Access",
-        "Restricted"
-      ],
+      "enumerations": ["Open Access", "Restricted"],
       "documentation": "a statement about the access rights to the content.",
       "nameEN": "Access Rights",
       "nameDE": "Zugriffsrechte",
@@ -540,13 +530,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": [
-        "de",
-        "en",
-        "fr",
-        "it",
-        "es"
-      ],
+      "enumerations": ["de", "en", "fr", "it", "es"],
       "documentation": "Language of the metadata. Specifies the default language of the records in the collection; deviations in particular records are specified in the record metadata, and deviations in particular elements are specified using the xml:lang attribute where allowed. Specified (like the xml:lang attribute) using ISO 639-1:2002, i.e. standard two letter language codes (en, fr, etc.).. Content providers are strongly recommended to complete this element.",
       "nameEN": "Language",
       "nameDE": "Sprache",
@@ -684,7 +668,7 @@
     },
     {
       "fieldPath": "coverage.temporal.timeSpan.startDate",
-      "type": "xs:date",
+      "type": "isodate",
       "isArray": false,
       "attributes": null,
       "enumerations": null,
@@ -699,7 +683,7 @@
     },
     {
       "fieldPath": "coverage.temporal.timeSpan.endDate",
-      "type": "xs:date",
+      "type": "isodate",
       "isArray": false,
       "attributes": null,
       "enumerations": null,
@@ -804,10 +788,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": [
-        "Radiocarbon dating",
-        "Dendrochronology"
-      ],
+      "enumerations": ["Radiocarbon dating", "Dendrochronology"],
       "documentation": "e.g. ‘radiocarbon dating’. Use of a controlled vocabulary is recommended; the vocabulary used should be indicated using an attribute. No particular common vocabulary is recommended for use.",
       "nameEN": "Scientific date method",
       "nameDE": "Wissenschaftliche Datierungsmethode",
@@ -1037,10 +1018,7 @@
           "value": "iso31661a2"
         }
       ],
-      "enumerations": [
-        "en",
-        "de"
-      ],
+      "enumerations": ["en", "de"],
       "documentation": "",
       "nameEN": "Country",
       "nameDE": "Land",
@@ -1606,10 +1584,7 @@
           "value": "iso31661a2"
         }
       ],
-      "enumerations": [
-        "en",
-        "de"
-      ],
+      "enumerations": ["en", "de"],
       "documentation": "in which the head office of the organisation that maintains the record is based.",
       "nameEN": "Country",
       "nameDE": "Land",
@@ -1688,7 +1663,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": null,
+      "enumerations": ["Dokumentar", "Projektleitung", "Kurator"],
       "documentation": "The particular role played by the person or organization",
       "nameEN": "Role",
       "nameDE": "Rolle",
@@ -1893,10 +1868,7 @@
           "value": "iso31661a2"
         }
       ],
-      "enumerations": [
-        "en",
-        "de"
-      ],
+      "enumerations": ["en", "de"],
       "documentation": "",
       "nameEN": "Country",
       "nameDE": "Land",
@@ -2012,7 +1984,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": null,
+      "enumerations": ["Dokumentar", "Projektleitung", "Kurator"],
       "documentation": "The particular role played by the person or organization",
       "nameEN": "Role",
       "nameDE": "Rolle",
@@ -2209,10 +2181,7 @@
           "value": "iso31661a2"
         }
       ],
-      "enumerations": [
-        "en",
-        "de"
-      ],
+      "enumerations": ["en", "de"],
       "documentation": "",
       "nameEN": "Country",
       "nameDE": "Land",
@@ -2267,10 +2236,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": [
-        "english",
-        "german"
-      ],
+      "enumerations": ["english", "german"],
       "documentation": "Of the metadata record. Specifies the default language of the record; deviations in particular elements are specified using the xml:lang attribute where allowed. Specified (like the xml:lang attribute) using ISO 639-1:2002, i.e. standard two letter language codes (en, fr, etc.).. Content providers are strongly recommended to complete this element.",
       "nameEN": "Language",
       "nameDE": "Sprache",
@@ -2342,11 +2308,25 @@
       "attributes": [
         {
           "name": "lang",
-          "type": "xs:string"
+          "type": "xs:string",
+          "nameDE": "Sprache",
+          "placeholderDE": "z.B. GR",
+          "nameEN": "Language",
+          "placeholderEN": "e.g. GR",
+          "documentationDE": "Sprache der Bezeichnung.",
+          "documentationEN": "Language of the name.",
+          "status": "recommended"
         },
         {
           "name": "preferred",
-          "type": "xs:boolean"
+          "type": "xs:boolean",
+          "nameDE": "Bevorzugt",
+          "placeholderDE": "z.B. true",
+          "nameEN": "Preferred",
+          "placeholderEN": "e.g. true",
+          "documentationDE": "Angabe ob es sich um die bevorzugte Bezeichnung handelt.",
+          "documentationEN": "Indicates whether this is the preferred name.",
+          "status": "required"
         }
       ],
       "enumerations": null,
@@ -2535,7 +2515,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": null,
+      "enumerations": ["Dokumentar", "Projektleitung", "Kurator"],
       "documentation": "The particular role played by the person or organization",
       "nameEN": "Role",
       "nameDE": "Rolle",
@@ -2732,10 +2712,7 @@
           "value": "iso31661a2"
         }
       ],
-      "enumerations": [
-        "en",
-        "de"
-      ],
+      "enumerations": ["en", "de"],
       "documentation": "",
       "nameEN": "Country",
       "nameDE": "Land",
@@ -2804,7 +2781,7 @@
     },
     {
       "fieldPath": "actors.vitalDates.dateOfBirth",
-      "type": "xs:date",
+      "type": "isodate",
       "isArray": false,
       "attributes": [
         {
@@ -2821,7 +2798,7 @@
     },
     {
       "fieldPath": "actors.vitalDates.dateOfDeath",
-      "type": "xs:date",
+      "type": "isodate",
       "isArray": false,
       "attributes": [
         {
@@ -3272,7 +3249,7 @@
     },
     {
       "fieldPath": "characters.temporal.timeSpan.startDate",
-      "type": "xs:date",
+      "type": "isodate",
       "isArray": false,
       "attributes": null,
       "enumerations": null,
@@ -3287,7 +3264,7 @@
     },
     {
       "fieldPath": "characters.temporal.timeSpan.endDate",
-      "type": "xs:date",
+      "type": "isodate",
       "isArray": false,
       "attributes": null,
       "enumerations": null,
@@ -3401,10 +3378,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": [
-        "Radiocarbon dating",
-        "Dendrochronology"
-      ],
+      "enumerations": ["Radiocarbon dating", "Dendrochronology"],
       "documentation": "e.g. ‘radiocarbon dating’. Use of a controlled vocabulary is recommended; the vocabulary used should be indicated using an attribute. No particular common vocabulary is recommended for use.",
       "nameEN": "Scientific Date Method",
       "nameDE": "Methode der wissenschaftlichen Datierung",
@@ -3442,7 +3416,14 @@
       "attributes": [
         {
           "name": "lang",
-          "type": "xs:string"
+          "type": "xs:string",
+          "nameDE": "Sprache",
+          "placeholderDE": "z.B. GR",
+          "nameEN": "Language",
+          "placeholderEN": "e.g. GR",
+          "documentationDE": "Sprache der Inschrift.",
+          "documentationEN": "Language of the inscription.",
+          "status": "recommended"
         },
         {
           "name": "type",
@@ -3459,9 +3440,17 @@
           "name": "namespace",
           "type": "xs:string"
         },
+
         {
           "name": "preferred",
-          "type": "xs:boolean"
+          "type": "xs:boolean",
+          "nameDE": "Bevorzugt",
+          "placeholderDE": "z.B. true",
+          "nameEN": "Preferred",
+          "placeholderEN": "e.g. true",
+          "documentationDE": "Angabe ob es sich um die bevorzugte Inschrift handelt.",
+          "documentationEN": "Indicates whether this is the preferred inscription.",
+          "status": "required"
         }
       ],
       "enumerations": null,
@@ -3496,12 +3485,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": [
-        "base",
-        "pedestal",
-        "artifact",
-        "column"
-      ],
+      "enumerations": ["base", "pedestal", "artifact", "column"],
       "documentation": "This element allows the part of the heritage asset being measured to be indicated, for example 'base' (meaning the base or bottom of the monument, building or object.",
       "nameEN": "Extent",
       "nameDE": "Ausmaß",
@@ -3521,13 +3505,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": [
-        "height",
-        "length",
-        "width",
-        "depth",
-        "shape"
-      ],
+      "enumerations": ["height", "length", "width", "depth", "shape"],
       "documentation": "e.g. height, length, width, depth, shape (e.g. oval)",
       "nameEN": "Measurement Type",
       "nameDE": "Maßart",
@@ -3542,10 +3520,7 @@
       "type": "xs:string",
       "isArray": false,
       "attributes": null,
-      "enumerations": [
-        "kilogram",
-        "metre"
-      ],
+      "enumerations": ["kilogram", "metre"],
       "documentation": "e.g. metres, centimetres",
       "nameEN": "Units",
       "nameDE": "Einheit",
@@ -3553,7 +3528,7 @@
       "documentationDE": "Gibt die verwendete Maßeinheit an.",
       "placeholderDE": "z.B. Zentimeter | Kilogramm",
       "placeholderEN": "e.g. centimetres | kilograms",
-      "status": "required"
+      "status": "recommended"
     },
     {
       "fieldPath": "characters.dimensions.scale",
@@ -3568,7 +3543,7 @@
       "documentationDE": "Maßstabsangabe, falls relevant – z.B. bei Modellen, Repliken oder maßstäblichen Darstellungen. Bei Originalobjekten in Originalgröße kann dieses Feld leer bleiben.",
       "placeholderDE": "z.B. 1:10 (nur bei Modellen/Repliken relevant)",
       "placeholderEN": "e.g. 1:10 (relevant for models/replicas only)",
-      "status": "required"
+      "status": "recommended"
     },
     {
       "fieldPath": "characters.dimensions.value",
@@ -3588,7 +3563,7 @@
       "documentationDE": "Numerischer Messwert in der angegebenen Einheit.",
       "placeholderDE": "z.B. 118 | 56 | 59 | 40",
       "placeholderEN": "e.g. 118 | 56 | 59 | 40",
-      "status": "required"
+      "status": "recommended"
     },
     {
       "fieldPath": "characters.craft",
@@ -4031,10 +4006,7 @@
           "value": "iso31661a2"
         }
       ],
-      "enumerations": [
-        "en",
-        "de"
-      ],
+      "enumerations": ["en", "de"],
       "documentation": "",
       "nameEN": "Country",
       "nameDE": "Land",
@@ -4154,7 +4126,7 @@
       "nameDE": "Geometrie",
       "documentationEN": "",
       "documentationDE": "",
-      "status": "hidden"
+      "status": "recommended"
     },
     {
       "fieldPath": "spatial.geometry.spatialReferenceSystem",
@@ -4669,10 +4641,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": [
-        "Open Access",
-        "Restricted"
-      ],
+      "enumerations": ["Open Access", "Restricted"],
       "documentation": "a statement about the access rights to the content.",
       "nameEN": "Access Rights",
       "nameDE": "Zugriffsrechte",
@@ -4907,11 +4876,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": [
-        "Creator",
-        "Compiler",
-        "Sculptor"
-      ],
+      "enumerations": ["Creator", "Compiler", "Sculptor"],
       "documentation": "The roles of the actor (creator, custodian, repository manager, curator, architect, sculptor, photographer, compiler, etc.). Use of a controlled vocabulary such as the Getty Art and Architecture thesaurus is recommended; the vocabulary used should be indicated using an attribute.",
       "nameEN": "Roles",
       "nameDE": "Rollen",
@@ -4958,7 +4923,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": null,
+      "enumerations": ["Dokumentar", "Projektleitung", "Kurator"],
       "documentation": "The particular role played by the person or organization",
       "nameEN": "Role",
       "nameDE": "Rolle",
@@ -5161,10 +5126,7 @@
           "value": "iso31661a2"
         }
       ],
-      "enumerations": [
-        "en",
-        "de"
-      ],
+      "enumerations": ["en", "de"],
       "documentation": "",
       "nameEN": "Country",
       "nameDE": "Land",
@@ -5233,7 +5195,7 @@
     },
     {
       "fieldPath": "references.actors.vitalDates.dateOfBirth",
-      "type": "xs:date",
+      "type": "isodate",
       "isArray": false,
       "attributes": [
         {
@@ -5250,7 +5212,7 @@
     },
     {
       "fieldPath": "references.actors.vitalDates.dateOfDeath",
-      "type": "xs:date",
+      "type": "isodate",
       "isArray": false,
       "attributes": [
         {
@@ -5728,10 +5690,7 @@
           "value": "iso31661a2"
         }
       ],
-      "enumerations": [
-        "en",
-        "de"
-      ],
+      "enumerations": ["en", "de"],
       "documentation": "in which the head office of the organisation that maintains the record is based.",
       "nameEN": "Country",
       "nameDE": "Land",
@@ -5810,7 +5769,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": null,
+      "enumerations": ["Dokumentar", "Projektleitung", "Kurator"],
       "documentation": "The particular role played by the person or organization",
       "nameEN": "Role",
       "nameDE": "Rolle",
@@ -6016,10 +5975,7 @@
           "value": "iso31661a2"
         }
       ],
-      "enumerations": [
-        "en",
-        "de"
-      ],
+      "enumerations": ["en", "de"],
       "documentation": "",
       "nameEN": "Country",
       "nameDE": "Land",
@@ -6135,7 +6091,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": null,
+      "enumerations": ["Dokumentar", "Projektleitung", "Kurator"],
       "documentation": "The particular role played by the person or organization",
       "nameEN": "Role",
       "nameDE": "Rolle",
@@ -6332,10 +6288,7 @@
           "value": "iso31661a2"
         }
       ],
-      "enumerations": [
-        "en",
-        "de"
-      ],
+      "enumerations": ["en", "de"],
       "documentation": "",
       "nameEN": "Country",
       "nameDE": "Land",
@@ -6657,7 +6610,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": null,
+      "enumerations": ["Dokumentar", "Projektleitung", "Kurator"],
       "documentation": "The particular role played by the person or organization",
       "nameEN": "Role",
       "nameDE": "Rolle",
@@ -6876,10 +6829,7 @@
           "value": "iso31661a2"
         }
       ],
-      "enumerations": [
-        "en",
-        "de"
-      ],
+      "enumerations": ["en", "de"],
       "documentation": "",
       "nameEN": "Country (Address)",
       "nameDE": "Land (Adresse)",
@@ -6952,7 +6902,7 @@
     },
     {
       "fieldPath": "actors.vitalDates.dateOfBirth",
-      "type": "xs:date",
+      "type": "isodate",
       "isArray": false,
       "attributes": [
         {
@@ -6969,7 +6919,7 @@
     },
     {
       "fieldPath": "actors.vitalDates.dateOfDeath",
-      "type": "xs:date",
+      "type": "isodate",
       "isArray": false,
       "attributes": [
         {
@@ -7122,13 +7072,7 @@
       "type": "complexType",
       "isArray": false,
       "attributes": null,
-      "enumerations": [
-        "Text",
-        "Image",
-        "Sound",
-        "Movie",
-        "3D"
-      ],
+      "enumerations": ["Text", "Image", "Sound", "Movie", "3D"],
       "documentation": "The nature or genre of the resource. Use of the DCMI controlled vocabulary is recommended, and the vocabulary used may be indicated using an attribute.. Content providers are strongly recommended to complete this element.",
       "nameEN": "Type",
       "nameDE": "Typ",
@@ -7140,7 +7084,7 @@
     },
     {
       "fieldPath": "format",
-      "type": "xs:string",
+      "type": "complexType",
       "isArray": true,
       "attributes": [
         {
@@ -7148,7 +7092,11 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": null,
+      "enumerations": [
+        {
+          "ABC": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000560.shtml"
+        }
+      ],
       "documentation": "The file format of the resource. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types (MIME).",
       "nameEN": "Format",
       "nameDE": "Format",
@@ -7304,13 +7252,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": [
-        "de",
-        "en",
-        "fr",
-        "it",
-        "es"
-      ],
+      "enumerations": ["de", "en", "fr", "it", "es"],
       "documentation": "Use for the language of the resource, e.g. the language sub-titles or a voice-over in a movie or a Virtual Reality model of a monument. Specified (like the xml:lang attribute) using ISO 639-1:2002, i.e. standard two letter language codes (en, fr, etc.).",
       "nameEN": "Language (Resource)",
       "nameDE": "Sprache (Ressource)",
@@ -7408,10 +7350,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": [
-        "Open Access",
-        "Restricted"
-      ],
+      "enumerations": ["Open Access", "Restricted"],
       "documentation": "a statement about the access rights to the content.",
       "nameEN": "Access Rights",
       "nameDE": "Zugriffsrechte",
@@ -7453,7 +7392,15 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": null,
+      "enumerations": [
+        "The Creative Commons CC0 1.0 Universal Public Domain Dedication (CC0)",
+        "Creative Commons - Attribution (BY)",
+        "Creative Commons - Attribution, ShareAlike (BY-SA)",
+        "Creative Commons - Attribution, No Derivatives (BY-ND)",
+        "Creative Commons - Attribution, Non-Commercial (BY-NC)",
+        "Creative Commons - Attribution, Non-Commercial, ShareAlike (BY-NC-SA)",
+        "Creative Commons - Attribution, Non-Commercial, No Derivatives (BY-NC-ND)"
+      ],
       "documentation": "a URI indicating a license or conditions for the use of the object or data, e.g. this could be a page on the content providers website which includes information about copyright, access rights and reproduction rights or a link to a Creative Commons license  or the public domain mark . Use as a supplement to the information above.  It is always recommended that the Copyright elements are given when known.",
       "nameEN": "Licence",
       "nameDE": "Lizenz",
@@ -7690,10 +7637,7 @@
           "value": "iso31661a2"
         }
       ],
-      "enumerations": [
-        "en",
-        "de"
-      ],
+      "enumerations": ["en", "de"],
       "documentation": "in which the head office of the organisation that maintains the record is based.",
       "nameEN": "Country",
       "nameDE": "Land",
@@ -7772,7 +7716,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": null,
+      "enumerations": ["Dokumentar", "Projektleitung", "Kurator"],
       "documentation": "The particular role played by the person or organization",
       "nameEN": "Role",
       "nameDE": "Rolle",
@@ -7978,10 +7922,7 @@
           "value": "iso31661a2"
         }
       ],
-      "enumerations": [
-        "en",
-        "de"
-      ],
+      "enumerations": ["en", "de"],
       "documentation": "",
       "nameEN": "Country",
       "nameDE": "Land",
@@ -8097,7 +8038,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": null,
+      "enumerations": ["Dokumentar", "Projektleitung", "Kurator"],
       "documentation": "The particular role played by the person or organization",
       "nameEN": "Role",
       "nameDE": "Rolle",
@@ -8294,10 +8235,7 @@
           "value": "iso31661a2"
         }
       ],
-      "enumerations": [
-        "en",
-        "de"
-      ],
+      "enumerations": ["en", "de"],
       "documentation": "",
       "nameEN": "Country",
       "nameDE": "Land",
@@ -8650,7 +8588,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": null,
+      "enumerations": ["Dokumentar", "Projektleitung", "Kurator"],
       "documentation": "The particular role played by the person or organization",
       "nameEN": "Role",
       "nameDE": "Rolle",
@@ -8850,10 +8788,7 @@
           "value": "iso31661a2"
         }
       ],
-      "enumerations": [
-        "en",
-        "de"
-      ],
+      "enumerations": ["en", "de"],
       "documentation": "",
       "nameEN": "Country",
       "nameDE": "Land",
@@ -8922,7 +8857,7 @@
     },
     {
       "fieldPath": "actors.vitalDates.dateOfBirth",
-      "type": "xs:date",
+      "type": "isodate",
       "isArray": false,
       "attributes": [
         {
@@ -8939,7 +8874,7 @@
     },
     {
       "fieldPath": "actors.vitalDates.dateOfDeath",
-      "type": "xs:date",
+      "type": "isodate",
       "isArray": false,
       "attributes": [
         {
@@ -9179,14 +9114,13 @@
       ],
       "enumerations": null,
       "documentation": "the name given to the period in history when something occurred. The element may be repeated using the XML:lang attribute if the element value is available in alternate languages. A preferred/alternate attribute may be used to indicate which value is preferred.",
-      "nameEN": "Period Name",
-      "nameDE": "Epochenname",
-      "documentationEN": "The name of the historical epoch or project period to which this activity is assigned.",
-      "documentationDE": "Name der historischen Epoche oder Projektperiode, der diese Aktivität zugeordnet wird.",
+      "nameEN": "Project period name",
+      "nameDE": "Zeitraum der Maßnahme",
+      "documentationEN": "The name of the project period to which this activity is assigned.",
+      "documentationDE": "Name der Projektperiode, der diese Aktivität zugeordnet wird.",
       "placeholderDE": "z.B. Pilotphase Digitalisierungsprogramm 2025",
       "placeholderEN": "e.g. Pilot phase digitisation programme 2025",
-      "status": "recommended",
-      "vocab": "https://vocabs.bcdh.uni-bonn.de/rest/v1/hector_epochs/narrower?uri=http://vocabs.bcdh.uni-bonn.de/hector_epochs/c_4a572b1e"
+      "status": "recommended"
     },
     {
       "fieldPath": "temporal.displayDate",
@@ -9238,10 +9172,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": [
-        "Radiocarbon dating",
-        "Dendrochronology"
-      ],
+      "enumerations": ["Radiocarbon dating", "Dendrochronology"],
       "documentation": "e.g. ‘radiocarbon dating’. Use of a controlled vocabulary is recommended; the vocabulary used should be indicated using an attribute. No particular common vocabulary is recommended for use.",
       "nameEN": "Scientific date method",
       "nameDE": "Wissenschaftliche Datierungsmethode",
@@ -9471,10 +9402,7 @@
           "value": "iso31661a2"
         }
       ],
-      "enumerations": [
-        "en",
-        "de"
-      ],
+      "enumerations": ["en", "de"],
       "documentation": "",
       "nameEN": "Country",
       "nameDE": "Land",
@@ -9993,7 +9921,7 @@
     },
     {
       "fieldPath": "consistsOf.startDate",
-      "type": "xs:date",
+      "type": "isodate",
       "isArray": false,
       "attributes": null,
       "enumerations": null,
@@ -10008,7 +9936,7 @@
     },
     {
       "fieldPath": "consistsOf.endDate",
-      "type": "xs:date",
+      "type": "isodate",
       "isArray": false,
       "attributes": null,
       "enumerations": null,

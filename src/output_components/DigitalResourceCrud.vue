@@ -75,8 +75,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"   required v-model="form['recordInformation.id']" class="input input-bordered w-full validator" :placeholder="getLabel('recordInformation.id', 'e.g. 3816816', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"     required v-model="form['recordInformation.id']" class="input input-bordered w-full validator " :placeholder="getLabel('recordInformation.id', 'e.g. 3816816', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -93,8 +93,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"   required v-model="form['recordInformation.source']" class="input input-bordered w-full validator" :placeholder="getLabel('recordInformation.source', 'e.g. Stiftung Preußischer Kulturbesitz, Staatliche Museen zu Berlin, Collection of Classical Antiquities', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"     required v-model="form['recordInformation.source']" class="input input-bordered w-full validator " :placeholder="getLabel('recordInformation.source', 'e.g. Stiftung Preußischer Kulturbesitz, Staatliche Museen zu Berlin, Collection of Classical Antiquities', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -658,8 +658,8 @@
               </button>
               </div>
               </div>
-                        <input type="date" :max="maxDate"   v-model="form['recordInformation.creation.date']" class="input input-bordered w-full validator" :placeholder="getLabel('recordInformation.creation.date', 'e.g. 2025-04-14', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="date" :max="maxDate"     v-model="form['recordInformation.creation.date']" class="input input-bordered w-full validator " :placeholder="getLabel('recordInformation.creation.date', 'e.g. 2025-04-14', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="col-span-full border-2 border-base-200 bg-base-100 p-4 rounded-box mb-6 shadow-sm">
@@ -838,7 +838,7 @@
              <li v-for="(subItem, subIdx) in form['appellation.name']" :key="subIdx" class="list-row flex items-center justify-between h-auto py-2">
                 <div v-if="!inlineEditing['appellation.name_' + subIdx]">{{ subItem }}</div>
                  <div v-else class="flex-1 mr-4">
-                   <input type="text"  required   v-model="form['appellation.name'][subIdx]" class="input input-sm input-bordered w-full validator" :placeholder="getLabel('appellation.name', 'e.g. 3D model of a female fragment of the tomb of Nikarete', 'plac')" />
+                   <input type="text"   required     v-model="form['appellation.name'][subIdx]" class="input input-sm input-bordered w-full validator " :placeholder="getLabel('appellation.name', 'e.g. 3D model of a female fragment of the tomb of Nikarete', 'plac')" />
                    <div class="validator-hint text-xs mt-1">Enter valid value</div>
                  </div>
                 <div class="flex gap-1 shrink-0">
@@ -871,8 +871,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"   required v-model="form['appellation.id']" class="input input-bordered w-full validator" :placeholder="getLabel('appellation.id', 'e.g. https://doi.org/10.60507/FK2/MHT0HM', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"     required v-model="form['appellation.id']" class="input input-bordered w-full validator " :placeholder="getLabel('appellation.id', 'e.g. https://doi.org/10.60507/FK2/MHT0HM', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
           </div>
@@ -917,7 +917,7 @@
              <li v-for="(subItem, subIdx) in form['note']" :key="subIdx" class="list-row flex items-center justify-between h-auto py-2">
                 <div v-if="!inlineEditing['note_' + subIdx]">{{ subItem }}</div>
                  <div v-else class="flex-1 mr-4">
-                   <input type="text"     v-model="form['note'][subIdx]" class="input input-sm input-bordered w-full validator" :placeholder="getLabel('note', 'e.g. The web-optimized version contains reduced texture resolution compared to the archival master.', 'plac')" />
+                   <input type="text"        v-model="form['note'][subIdx]" class="input input-sm input-bordered w-full validator " :placeholder="getLabel('note', 'e.g. The web-optimized version contains reduced texture resolution compared to the archival master.', 'plac')" />
                    <div class="validator-hint text-xs mt-1">Enter valid value</div>
                  </div>
                 <div class="flex gap-1 shrink-0">
@@ -1028,7 +1028,7 @@
              <li v-for="(subItem, subIdx) in form['format']" :key="subIdx" class="list-row flex items-center justify-between h-auto py-2">
                 <div v-if="!inlineEditing['format_' + subIdx]">{{ subItem }}</div>
                  <div v-else class="flex-1 mr-4">
-                   <input type="text"  required   v-model="form['format'][subIdx]" class="input input-sm input-bordered w-full validator" :placeholder="getLabel('format', 'e.g. Model: OBJ + MTL; texture: JPEG', 'plac')" />
+                   <input type="text"   required     v-model="form['format'][subIdx]" class="input input-sm input-bordered w-full validator " :placeholder="getLabel('format', 'e.g. Model: OBJ + MTL; texture: JPEG', 'plac')" />
                    <div class="validator-hint text-xs mt-1">Enter valid value</div>
                  </div>
                 <div class="flex gap-1 shrink-0">
@@ -1078,8 +1078,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"   required v-model="form['extent']" class="input input-bordered w-full validator" :placeholder="getLabel('extent', 'e.g. 45 MB (web version); 2.3 GB (archival version)', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"     required v-model="form['extent']" class="input input-bordered w-full validator " :placeholder="getLabel('extent', 'e.g. 45 MB (web version); 2.3 GB (archival version)', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="col-span-full border-2 border-base-200 bg-base-100 p-4 rounded-box mb-6 shadow-sm">
@@ -1133,8 +1133,8 @@
               </button>
               </div>
               </div>
-                        <input type="date" :max="maxDate"   v-model="form['created']" class="input input-bordered w-full validator" :placeholder="getLabel('created', 'e.g. 2025-01-30', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="date" :max="maxDate"     v-model="form['created']" class="input input-bordered w-full validator " :placeholder="getLabel('created', 'e.g. 2025-01-30', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
     <div class="col-span-full border-2 border-base-200 bg-base-100 p-4 rounded-box mb-6 shadow-sm">
@@ -1207,8 +1207,8 @@
               </button>
               </div>
               </div>
-                        <input type="url"  pattern="[Hh][Tt][Tt][Pp][Ss]?://(?:(?:[a-zA-Z¡-￿0-9]+-?)*[a-zA-Z¡-￿0-9]+)(?:.(?:[a-zA-Z¡-￿0-9]+-?)*[a-zA-Z¡-￿0-9]+)*(?:.(?:[a-zA-Z¡-￿]{2,}))(?::d{2,5})?(?:/[^s]*)?" required v-model="form['link']" class="input input-bordered w-full validator" :placeholder="getLabel('link', 'e.g. https://doi.org/10.60507/FK2/MHT0HM/F3BFT8', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="url"   pattern="[Hh][Tt][Tt][Pp][Ss]?://(?:(?:[a-zA-Z¡-￿0-9]+-?)*[a-zA-Z¡-￿0-9]+)(?:.(?:[a-zA-Z¡-￿0-9]+-?)*[a-zA-Z¡-￿0-9]+)*(?:.(?:[a-zA-Z¡-￿]{2,}))(?::d{2,5})?(?:/[^s]*)?"  required v-model="form['link']" class="input input-bordered w-full validator " :placeholder="getLabel('link', 'e.g. https://doi.org/10.60507/FK2/MHT0HM/F3BFT8', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -1225,8 +1225,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="form['object']" class="input input-bordered w-full validator" :placeholder="getLabel('object', 'e.g. https://[domain]/thumbnails/sk740_nikarete.jpg', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="form['object']" class="input input-bordered w-full validator " :placeholder="getLabel('object', 'e.g. https://[domain]/thumbnails/sk740_nikarete.jpg', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -1243,8 +1243,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="form['isShownAt']" class="input input-bordered w-full validator" :placeholder="getLabel('isShownAt', 'e.g. https://id.smb.museum/object/699203/', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="form['isShownAt']" class="input input-bordered w-full validator " :placeholder="getLabel('isShownAt', 'e.g. https://id.smb.museum/object/699203/', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="col-span-full border border-base-300 bg-base-100/50 p-5 rounded-box mb-6 mt-2">
@@ -1279,8 +1279,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"   required v-model="form['rights.copyrightCreditLine']" class="input input-bordered w-full validator" :placeholder="getLabel('rights.copyrightCreditLine', 'e.g. Staatliche Museen zu Berlin, Antikensammlung / Bonn Center for Digital Humanities, 2025', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"     required v-model="form['rights.copyrightCreditLine']" class="input input-bordered w-full validator " :placeholder="getLabel('rights.copyrightCreditLine', 'e.g. Staatliche Museen zu Berlin, Antikensammlung / Bonn Center for Digital Humanities, 2025', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -1328,9 +1328,9 @@
           
         </div>
         <div class="form-control w-full mb-4">
-        <div class="flex flex-row items-center">
-          <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('rights.licence', 'licence') }}</span><span class="text-accent font-black">*</span></label>
-          
+        <div class="flex flex-row items-center">  
+        <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('rights.licence', 'licence') }}</span><span class="text-accent font-black">*</span></label>
+
           <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('rights.licence', 'A URI indicating a licence or conditions for the use of this digital resource.', 'doc')" v-if="getLabel('rights.licence', 'A URI indicating a licence or conditions for the use of this digital resource.', 'doc')">
                 <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
               <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" 
@@ -1338,13 +1338,32 @@
                           stroke-width="2.5"
                           stroke="currentColor"
                           class="size-[1.2em] primary-content"><path  d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
-              </button>
+                </button>
               </div>
               </div>
-                        <input type="text"   required v-model="form['rights.licence']" class="input input-bordered w-full validator" :placeholder="getLabel('rights.licence', 'e.g. CC BY-SA 4.0', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+          <select v-model="form['rights.licence']" class="select select-bordered w-full">
+            <option disabled value="">{{ currentLocale === 'de' ? getLabel('rights.licence', 'licence') + ' ' + t('select') : t('select') + ' ' + getLabel('rights.licence', 'licence') }}</option>
+            <template v-if="currentLocale === 'de'">
+              <option value="https://creativecommons.org/licenses/by/4.0/deed.de">Creative Commons - Attribution (BY)</option>
+<option value="https://creativecommons.org/licenses/by-nd/4.0/deed.de">Creative Commons - Attribution, No Derivatives (BY-ND)</option>
+<option value="https://creativecommons.org/licenses/by-nc/4.0/deed.de">Creative Commons - Attribution, Non-Commercial (BY-NC)</option>
+<option value="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.de">Creative Commons - Attribution, Non-Commercial, No Derivatives (BY-NC-ND)</option>
+<option value="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de">Creative Commons - Attribution, Non-Commercial, ShareAlike (BY-NC-SA)</option>
+<option value="https://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative Commons - Attribution, ShareAlike (BY-SA)</option>
+<option value="https://creativecommons.org/publicdomain/zero/1.0/deed.de">The Creative Commons CC0 1.0 Universal Public Domain Dedication (CC0)</option>
+            </template>
+            <template v-else>
+              <option value="https://creativecommons.org/licenses/by/4.0/deed.en">Creative Commons - Attribution (BY)</option>
+<option value="https://creativecommons.org/licenses/by-nd/4.0/deed.en">Creative Commons - Attribution, No Derivatives (BY-ND)</option>
+<option value="https://creativecommons.org/licenses/by-nc/4.0/deed.en">Creative Commons - Attribution, Non-Commercial (BY-NC)</option>
+<option value="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">Creative Commons - Attribution, Non-Commercial, No Derivatives (BY-NC-ND)</option>
+<option value="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons - Attribution, Non-Commercial, ShareAlike (BY-NC-SA)</option>
+<option value="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons - Attribution, ShareAlike (BY-SA)</option>
+<option value="https://creativecommons.org/publicdomain/zero/1.0/deed.en">The Creative Commons CC0 1.0 Universal Public Domain Dedication (CC0)</option>
+            </template>
+          </select>
           
-          </div>
+        </div>
           </div>
           
         </div>
@@ -1370,7 +1389,7 @@
              <li v-for="(subItem, subIdx) in form['isRepresentationOf']" :key="subIdx" class="list-row flex items-center justify-between h-auto py-2">
                 <div v-if="!inlineEditing['isRepresentationOf_' + subIdx]">{{ subItem }}</div>
                  <div v-else class="flex-1 mr-4">
-                   <input type="text"  required   v-model="form['isRepresentationOf'][subIdx]" class="input input-sm input-bordered w-full validator" :placeholder="getLabel('isRepresentationOf', 'e.g. SK 740 (inventory number) or https://id.smb.museum/object/699203', 'plac')" />
+                   <input type="text"   required     v-model="form['isRepresentationOf'][subIdx]" class="input input-sm input-bordered w-full validator " :placeholder="getLabel('isRepresentationOf', 'e.g. SK 740 (inventory number) or https://id.smb.museum/object/699203', 'plac')" />
                    <div class="validator-hint text-xs mt-1">Enter valid value</div>
                  </div>
                 <div class="flex gap-1 shrink-0">
@@ -1411,7 +1430,7 @@
              <li v-for="(subItem, subIdx) in form['hasPart']" :key="subIdx" class="list-row flex items-center justify-between h-auto py-2">
                 <div v-if="!inlineEditing['hasPart_' + subIdx]">{{ subItem }}</div>
                  <div v-else class="flex-1 mr-4">
-                   <input type="text"     v-model="form['hasPart'][subIdx]" class="input input-sm input-bordered w-full validator" :placeholder="getLabel('hasPart', 'e.g. SK_740_Nikarete_texture_images (https://doi.org/10.60507/FK2/MHT0HM/F3BFT8)', 'plac')" />
+                   <input type="text"        v-model="form['hasPart'][subIdx]" class="input input-sm input-bordered w-full validator " :placeholder="getLabel('hasPart', 'e.g. SK_740_Nikarete_texture_images (https://doi.org/10.60507/FK2/MHT0HM/F3BFT8)', 'plac')" />
                    <div class="validator-hint text-xs mt-1">Enter valid value</div>
                  </div>
                 <div class="flex gap-1 shrink-0">
@@ -1452,7 +1471,7 @@
              <li v-for="(subItem, subIdx) in form['isPartOf']" :key="subIdx" class="list-row flex items-center justify-between h-auto py-2">
                 <div v-if="!inlineEditing['isPartOf_' + subIdx]">{{ subItem }}</div>
                  <div v-else class="flex-1 mr-4">
-                   <input type="text"     v-model="form['isPartOf'][subIdx]" class="input input-sm input-bordered w-full validator" :placeholder="getLabel('isPartOf', 'e.g. ID of the parent record', 'plac')" />
+                   <input type="text"        v-model="form['isPartOf'][subIdx]" class="input input-sm input-bordered w-full validator " :placeholder="getLabel('isPartOf', 'e.g. ID of the parent record', 'plac')" />
                    <div class="validator-hint text-xs mt-1">Enter valid value</div>
                  </div>
                 <div class="flex gap-1 shrink-0">
@@ -1493,7 +1512,7 @@
              <li v-for="(subItem, subIdx) in form['nextInSequence']" :key="subIdx" class="list-row flex items-center justify-between h-auto py-2">
                 <div v-if="!inlineEditing['nextInSequence_' + subIdx]">{{ subItem }}</div>
                  <div v-else class="flex-1 mr-4">
-                   <input type="text"     v-model="form['nextInSequence'][subIdx]" class="input input-sm input-bordered w-full validator" :placeholder="getLabel('nextInSequence', 'e.g. ID of the next resource in the sequence', 'plac')" />
+                   <input type="text"        v-model="form['nextInSequence'][subIdx]" class="input input-sm input-bordered w-full validator " :placeholder="getLabel('nextInSequence', 'e.g. ID of the next resource in the sequence', 'plac')" />
                    <div class="validator-hint text-xs mt-1">Enter valid value</div>
                  </div>
                 <div class="flex gap-1 shrink-0">
@@ -1534,7 +1553,7 @@
              <li v-for="(subItem, subIdx) in form['isPreviousInSequence']" :key="subIdx" class="list-row flex items-center justify-between h-auto py-2">
                 <div v-if="!inlineEditing['isPreviousInSequence_' + subIdx]">{{ subItem }}</div>
                  <div v-else class="flex-1 mr-4">
-                   <input type="text"     v-model="form['isPreviousInSequence'][subIdx]" class="input input-sm input-bordered w-full validator" :placeholder="getLabel('isPreviousInSequence', 'e.g. ID of the previous resource in the sequence', 'plac')" />
+                   <input type="text"        v-model="form['isPreviousInSequence'][subIdx]" class="input input-sm input-bordered w-full validator " :placeholder="getLabel('isPreviousInSequence', 'e.g. ID of the previous resource in the sequence', 'plac')" />
                    <div class="validator-hint text-xs mt-1">Enter valid value</div>
                  </div>
                 <div class="flex gap-1 shrink-0">
@@ -1575,7 +1594,7 @@
              <li v-for="(subItem, subIdx) in form['isDerivativeOf']" :key="subIdx" class="list-row flex items-center justify-between h-auto py-2">
                 <div v-if="!inlineEditing['isDerivativeOf_' + subIdx]">{{ subItem }}</div>
                  <div v-else class="flex-1 mr-4">
-                   <input type="text"     v-model="form['isDerivativeOf'][subIdx]" class="input input-sm input-bordered w-full validator" :placeholder="getLabel('isDerivativeOf', 'e.g. ID of the source model', 'plac')" />
+                   <input type="text"        v-model="form['isDerivativeOf'][subIdx]" class="input input-sm input-bordered w-full validator " :placeholder="getLabel('isDerivativeOf', 'e.g. ID of the source model', 'plac')" />
                    <div class="validator-hint text-xs mt-1">Enter valid value</div>
                  </div>
                 <div class="flex gap-1 shrink-0">
@@ -1616,7 +1635,7 @@
              <li v-for="(subItem, subIdx) in form['hasDerivative']" :key="subIdx" class="list-row flex items-center justify-between h-auto py-2">
                 <div v-if="!inlineEditing['hasDerivative_' + subIdx]">{{ subItem }}</div>
                  <div v-else class="flex-1 mr-4">
-                   <input type="text"     v-model="form['hasDerivative'][subIdx]" class="input input-sm input-bordered w-full validator" :placeholder="getLabel('hasDerivative', 'e.g. SK_740_Nikarete_LP (https://doi.org/10.60507/FK2/MHT0HM/QIPWZC)', 'plac')" />
+                   <input type="text"        v-model="form['hasDerivative'][subIdx]" class="input input-sm input-bordered w-full validator " :placeholder="getLabel('hasDerivative', 'e.g. SK_740_Nikarete_LP (https://doi.org/10.60507/FK2/MHT0HM/QIPWZC)', 'plac')" />
                    <div class="validator-hint text-xs mt-1">Enter valid value</div>
                  </div>
                 <div class="flex gap-1 shrink-0">
@@ -1657,7 +1676,7 @@
              <li v-for="(subItem, subIdx) in form['createdDerivative']" :key="subIdx" class="list-row flex items-center justify-between h-auto py-2">
                 <div v-if="!inlineEditing['createdDerivative_' + subIdx]">{{ subItem }}</div>
                  <div v-else class="flex-1 mr-4">
-                   <input type="text"     v-model="form['createdDerivative'][subIdx]" class="input input-sm input-bordered w-full validator" :placeholder="getLabel('createdDerivative', 'e.g. ID of the derivative created during the digitisation process', 'plac')" />
+                   <input type="text"        v-model="form['createdDerivative'][subIdx]" class="input input-sm input-bordered w-full validator " :placeholder="getLabel('createdDerivative', 'e.g. ID of the derivative created during the digitisation process', 'plac')" />
                    <div class="validator-hint text-xs mt-1">Enter valid value</div>
                  </div>
                 <div class="flex gap-1 shrink-0">
@@ -1698,7 +1717,7 @@
              <li v-for="(subItem, subIdx) in form['dcRelation']" :key="subIdx" class="list-row flex items-center justify-between h-auto py-2">
                 <div v-if="!inlineEditing['dcRelation_' + subIdx]">{{ subItem }}</div>
                  <div v-else class="flex-1 mr-4">
-                   <input type="url"    pattern="[Hh][Tt][Tt][Pp][Ss]?://(?:(?:[a-zA-Z¡-￿0-9]+-?)*[a-zA-Z¡-￿0-9]+)(?:.(?:[a-zA-Z¡-￿0-9]+-?)*[a-zA-Z¡-￿0-9]+)*(?:.(?:[a-zA-Z¡-￿]{2,}))(?::d{2,5})?(?:/[^s]*)?" v-model="form['dcRelation'][subIdx]" class="input input-sm input-bordered w-full validator" :placeholder="getLabel('dcRelation', 'e.g. https://doi.org/10.60507/FK2/MHT0HM', 'plac')" />
+                   <input type="url"     pattern="[Hh][Tt][Tt][Pp][Ss]?://(?:(?:[a-zA-Z¡-￿0-9]+-?)*[a-zA-Z¡-￿0-9]+)(?:.(?:[a-zA-Z¡-￿0-9]+-?)*[a-zA-Z¡-￿0-9]+)*(?:.(?:[a-zA-Z¡-￿]{2,}))(?::d{2,5})?(?:/[^s]*)?"   v-model="form['dcRelation'][subIdx]" class="input input-sm input-bordered w-full validator " :placeholder="getLabel('dcRelation', 'e.g. https://doi.org/10.60507/FK2/MHT0HM', 'plac')" />
                    <div class="validator-hint text-xs mt-1">Enter valid value</div>
                  </div>
                 <div class="flex gap-1 shrink-0">
@@ -1770,14 +1789,14 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="drawerForm['name']" class="input input-bordered w-full validator" :placeholder="getLabel('recordInformation.creation.contacts.name', 'e.g. John Doe', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="drawerForm['name']" class="input input-bordered w-full validator " :placeholder="getLabel('recordInformation.creation.contacts.name', 'e.g. John Doe', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
-        <div class="flex flex-row items-center">
-          <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('recordInformation.creation.contacts.role', 'role') }}</span><span class="text-warning font-black">~</span></label>
-          
+        <div class="flex flex-row items-center">  
+        <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('recordInformation.creation.contacts.role', 'role') }}</span><span class="text-warning font-black">~</span></label>
+
           <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('recordInformation.creation.contacts.role', 'Role of the person in the project or institution.', 'doc')" v-if="getLabel('recordInformation.creation.contacts.role', 'Role of the person in the project or institution.', 'doc')">
                 <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
               <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" 
@@ -1785,13 +1804,24 @@
                           stroke-width="2.5"
                           stroke="currentColor"
                           class="size-[1.2em] primary-content"><path  d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
-              </button>
+                </button>
               </div>
               </div>
-                        <input type="text"    v-model="drawerForm['role']" class="input input-bordered w-full validator" :placeholder="getLabel('recordInformation.creation.contacts.role', 'e.g. Documentation', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+          <select v-model="drawerForm['role']" class="select select-bordered w-full">
+            <option disabled value="">{{ currentLocale === 'de' ? getLabel('recordInformation.creation.contacts.role', 'role') + ' ' + t('select') : t('select') + ' ' + getLabel('recordInformation.creation.contacts.role', 'role') }}</option>
+            <template v-if="currentLocale === 'de'">
+              <option value="Dokumentar">Dokumentar</option>
+<option value="Kurator">Kurator</option>
+<option value="Projektleitung">Projektleitung</option>
+            </template>
+            <template v-else>
+              <option value="Curator">Curator</option>
+<option value="Documentation">Documentation</option>
+<option value="Project Management">Project Management</option>
+            </template>
+          </select>
           
-          </div>
+        </div>
         <div class="form-control w-full mb-4">
         <div class="flex flex-row items-center">
           <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('recordInformation.creation.contacts.organization', 'organization') }}</span><span class="text-accent font-black">*</span></label>
@@ -1806,8 +1836,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"   required v-model="drawerForm['organization']" class="input input-bordered w-full validator" :placeholder="getLabel('recordInformation.creation.contacts.organization', 'e.g. Stiftung Preußischer Kulturbesitz, Staatliche Museen zu Berlin', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"     required v-model="drawerForm['organization']" class="input input-bordered w-full validator " :placeholder="getLabel('recordInformation.creation.contacts.organization', 'e.g. Stiftung Preußischer Kulturbesitz, Staatliche Museen zu Berlin', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -1824,8 +1854,8 @@
               </button>
               </div>
               </div>
-                        <input type="email"    v-model="drawerForm['email']" class="input input-bordered w-full validator" :placeholder="getLabel('recordInformation.creation.contacts.email', '', 'plac')" />
-              <div class="validator-hint">t('validationEmail')</div>        
+                        <input type="email"      v-model="drawerForm['email']" class="input input-bordered w-full validator " :placeholder="getLabel('recordInformation.creation.contacts.email', '', 'plac')" />
+              <div class="validator-hint">{{t('validationEmail')}}</div>        
           
           </div>
         <div class="col-span-full border border-base-300 bg-base-100/50 p-5 rounded-box mb-6 mt-2">
@@ -1860,8 +1890,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="drawerForm['address.numberInRoad']" class="input input-bordered w-full validator" :placeholder="getLabel('recordInformation.creation.contacts.address.numberInRoad', '', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="drawerForm['address.numberInRoad']" class="input input-bordered w-full validator " :placeholder="getLabel('recordInformation.creation.contacts.address.numberInRoad', '', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -1878,8 +1908,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="drawerForm['address.roadName']" class="input input-bordered w-full validator" :placeholder="getLabel('recordInformation.creation.contacts.address.roadName', '', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="drawerForm['address.roadName']" class="input input-bordered w-full validator " :placeholder="getLabel('recordInformation.creation.contacts.address.roadName', '', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -1896,8 +1926,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="drawerForm['address.townOrCity']" class="input input-bordered w-full validator" :placeholder="getLabel('recordInformation.creation.contacts.address.townOrCity', '', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="drawerForm['address.townOrCity']" class="input input-bordered w-full validator " :placeholder="getLabel('recordInformation.creation.contacts.address.townOrCity', '', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -1914,8 +1944,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="drawerForm['address.postcodeOrZipcode']" class="input input-bordered w-full validator" :placeholder="getLabel('recordInformation.creation.contacts.address.postcodeOrZipcode', '', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="drawerForm['address.postcodeOrZipcode']" class="input input-bordered w-full validator " :placeholder="getLabel('recordInformation.creation.contacts.address.postcodeOrZipcode', '', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -2502,8 +2532,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="drawerForm['id']" class="input input-bordered w-full validator" :placeholder="getLabel('actors.id', 'e.g. https://orcid.org/0000-0003-3047-2722', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="drawerForm['id']" class="input input-bordered w-full validator " :placeholder="getLabel('actors.id', 'e.g. https://orcid.org/0000-0003-3047-2722', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -2520,8 +2550,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"   required v-model="drawerForm['name']" class="input input-bordered w-full validator" :placeholder="getLabel('actors.name', 'e.g. name of the person involved in creating the resource', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"     required v-model="drawerForm['name']" class="input input-bordered w-full validator " :placeholder="getLabel('actors.name', 'e.g. name of the person involved in creating the resource', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -2538,8 +2568,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"   required v-model="drawerForm['actorType']" class="input input-bordered w-full validator" :placeholder="getLabel('actors.actorType', 'e.g. individual | organization', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"     required v-model="drawerForm['actorType']" class="input input-bordered w-full validator " :placeholder="getLabel('actors.actorType', 'e.g. individual | organization', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -2556,8 +2586,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"   required v-model="drawerForm['roles']" class="input input-bordered w-full validator" :placeholder="getLabel('actors.roles', 'e.g. 3D Data Acquisition Lead | Data Processing', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"     required v-model="drawerForm['roles']" class="input input-bordered w-full validator " :placeholder="getLabel('actors.roles', 'e.g. 3D Data Acquisition Lead | Data Processing', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="col-span-full border border-base-300 bg-base-100/50 p-5 rounded-box mb-6 mt-2">
@@ -2592,8 +2622,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"   required v-model="drawerForm['contacts.organization']" class="input input-bordered w-full validator" :placeholder="getLabel('actors.contacts.organization', 'e.g. University of Bonn, Bonn Center for Digital Humanities', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"     required v-model="drawerForm['contacts.organization']" class="input input-bordered w-full validator " :placeholder="getLabel('actors.contacts.organization', 'e.g. University of Bonn, Bonn Center for Digital Humanities', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -2610,8 +2640,8 @@
               </button>
               </div>
               </div>
-                        <input type="email"    v-model="drawerForm['contacts.email']" class="input input-bordered w-full validator" :placeholder="getLabel('actors.contacts.email', 'e.g. email address of the involved person', 'plac')" />
-              <div class="validator-hint">t('validationEmail')</div>        
+                        <input type="email"      v-model="drawerForm['contacts.email']" class="input input-bordered w-full validator " :placeholder="getLabel('actors.contacts.email', 'e.g. email address of the involved person', 'plac')" />
+              <div class="validator-hint">{{t('validationEmail')}}</div>        
           
           </div>
         <div class="col-span-full border border-base-300 bg-base-100/50 p-5 rounded-box mb-6 mt-2">
@@ -2646,8 +2676,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="drawerForm['contacts.address.numberInRoad']" class="input input-bordered w-full validator" :placeholder="getLabel('actors.contacts.address.numberInRoad', 'e.g. 22', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="drawerForm['contacts.address.numberInRoad']" class="input input-bordered w-full validator " :placeholder="getLabel('actors.contacts.address.numberInRoad', 'e.g. 22', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -2664,8 +2694,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="drawerForm['contacts.address.roadName']" class="input input-bordered w-full validator" :placeholder="getLabel('actors.contacts.address.roadName', 'e.g. Maximilianstraße', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="drawerForm['contacts.address.roadName']" class="input input-bordered w-full validator " :placeholder="getLabel('actors.contacts.address.roadName', 'e.g. Maximilianstraße', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -2682,8 +2712,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="drawerForm['contacts.address.townOrCity']" class="input input-bordered w-full validator" :placeholder="getLabel('actors.contacts.address.townOrCity', 'e.g. Bonn', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="drawerForm['contacts.address.townOrCity']" class="input input-bordered w-full validator " :placeholder="getLabel('actors.contacts.address.townOrCity', 'e.g. Bonn', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -2700,8 +2730,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"    v-model="drawerForm['contacts.address.postcodeOrZipcode']" class="input input-bordered w-full validator" :placeholder="getLabel('actors.contacts.address.postcodeOrZipcode', 'e.g. 53111', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"      v-model="drawerForm['contacts.address.postcodeOrZipcode']" class="input input-bordered w-full validator " :placeholder="getLabel('actors.contacts.address.postcodeOrZipcode', 'e.g. 53111', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -3267,8 +3297,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"   required v-model="drawerForm['publisher']" class="input input-bordered w-full validator" :placeholder="getLabel('publicationStatement.publisher', 'e.g. University of Bonn, Bonn Center for Digital Humanities', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"     required v-model="drawerForm['publisher']" class="input input-bordered w-full validator " :placeholder="getLabel('publicationStatement.publisher', 'e.g. University of Bonn, Bonn Center for Digital Humanities', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -3285,8 +3315,8 @@
               </button>
               </div>
               </div>
-                        <input type="text"   required v-model="drawerForm['place']" class="input input-bordered w-full validator" :placeholder="getLabel('publicationStatement.place', 'e.g. Bonn, Germany', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="text"     required v-model="drawerForm['place']" class="input input-bordered w-full validator " :placeholder="getLabel('publicationStatement.place', 'e.g. Bonn, Germany', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
         <div class="form-control w-full mb-4">
@@ -3303,8 +3333,8 @@
               </button>
               </div>
               </div>
-                        <input type="date" :max="maxDate"  required v-model="drawerForm['date']" class="input input-bordered w-full validator" :placeholder="getLabel('publicationStatement.date', 'e.g. 2025-04-18', 'plac')" />
-              <div class="validator-hint">t('validationHint')</div>        
+                        <input type="date" :max="maxDate"    required v-model="drawerForm['date']" class="input input-bordered w-full validator " :placeholder="getLabel('publicationStatement.date', 'e.g. 2025-04-18', 'plac')" />
+              <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div></div>
       </div>
