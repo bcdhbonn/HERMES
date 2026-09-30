@@ -1691,7 +1691,7 @@
       "documentationDE": "Organisation, der die kontaktierte Person angehört.",
       "placeholderDE": "z.B. Stiftung Preußischer Kulturbesitz, Staatliche Museen zu Berlin",
       "placeholderEN": "e.g. Stiftung Preußischer Kulturbesitz, Staatliche Museen zu Berlin",
-      "status": "required"
+      "status": "recommended"
     },
     {
       "fieldPath": "recordInformation.creation.contacts.email",
@@ -2435,7 +2435,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": null,
+      "enumerations": ["individual", "group", "organization"],
       "documentation": "Indicates whether the actor is an individual, a group of individuals or an organization.",
       "nameEN": "Actor type",
       "nameDE": "Akteurtyp",
@@ -2465,7 +2465,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": null,
+      "enumerations": ["Creator", "Compiler", "Sculptor"],
       "documentation": "The roles of the actor (creator, custodian, repository manager, curator, architect, sculptor, photographer, compiler, etc.). Use of a controlled vocabulary such as the Getty Art and Architecture thesaurus is recommended; the vocabulary used should be indicated using an attribute.",
       "nameEN": "Roles",
       "nameDE": "Rollen",
@@ -4846,7 +4846,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": null,
+      "enumerations": ["individual", "group", "organization"],
       "documentation": "Indicates whether the actor is an individual, a group of individuals or an organization.",
       "nameEN": "Actor type",
       "nameDE": "Akteurtyp",
@@ -5797,7 +5797,7 @@
       "documentationDE": "Organisation, der die kontaktierte Person angehört.",
       "placeholderDE": "z.B. Stiftung Preußischer Kulturbesitz, Staatliche Museen zu Berlin",
       "placeholderEN": "e.g. Stiftung Preußischer Kulturbesitz, Staatliche Museen zu Berlin",
-      "status": "required"
+      "status": "recommended"
     },
     {
       "fieldPath": "recordInformation.creation.contacts.email",
@@ -6528,7 +6528,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": null,
+      "enumerations": ["individual", "group", "organization"],
       "documentation": "Indicates whether the actor is an individual, a group of individuals or an organization.",
       "nameEN": "Actor Type",
       "nameDE": "Akteurtyp",
@@ -6560,7 +6560,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": null,
+      "enumerations": ["Creator", "Compiler", "Sculptor"],
       "documentation": "The roles of the actor (creator, custodian, repository manager, curator, architect, sculptor, photographer, compiler, etc.). Use of a controlled vocabulary such as the Getty Art and Architecture thesaurus is recommended; the vocabulary used should be indicated using an attribute.",
       "nameEN": "Roles",
       "nameDE": "Rollen",
@@ -7744,7 +7744,7 @@
       "documentationDE": "Organisation, der die kontaktierte Person angehört.",
       "placeholderDE": "z.B. Stiftung Preußischer Kulturbesitz, Staatliche Museen zu Berlin",
       "placeholderEN": "e.g. Stiftung Preußischer Kulturbesitz, Staatliche Museen zu Berlin",
-      "status": "required"
+      "status": "recommended"
     },
     {
       "fieldPath": "recordInformation.creation.contacts.email",
@@ -8348,11 +8348,25 @@
       "attributes": [
         {
           "name": "lang",
-          "type": "xs:string"
+          "type": "xs:string",
+          "nameDE": "Sprache",
+          "placeholderDE": "z.B. GR",
+          "nameEN": "Language",
+          "placeholderEN": "e.g. GR",
+          "documentationDE": "Sprache der Bezeichnung.",
+          "documentationEN": "Language of the name.",
+          "status": "recommended"
         },
         {
           "name": "preferred",
-          "type": "xs:boolean"
+          "type": "xs:boolean",
+          "nameDE": "Bevorzugt",
+          "placeholderDE": "z.B. true",
+          "nameEN": "Preferred",
+          "placeholderEN": "e.g. true",
+          "documentationDE": "Angabe ob es sich um die bevorzugte Bezeichnung handelt.",
+          "documentationEN": "Indicates whether this is the preferred name.",
+          "status": "required"
         }
       ],
       "enumerations": null,
@@ -8506,7 +8520,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": null,
+      "enumerations": ["individual", "group", "organization"],
       "documentation": "Indicates whether the actor is an individual, a group of individuals or an organization.",
       "nameEN": "Actor Type",
       "nameDE": "Akteurtyp",
@@ -8538,7 +8552,7 @@
           "type": "xs:string"
         }
       ],
-      "enumerations": null,
+      "enumerations": ["Creator", "Compiler", "Sculptor"],
       "documentation": "The roles of the actor (creator, custodian, repository manager, curator, architect, sculptor, photographer, compiler, etc.). Use of a controlled vocabulary such as the Getty Art and Architecture thesaurus is recommended; the vocabulary used should be indicated using an attribute.",
       "nameEN": "Roles",
       "nameDE": "Rollen",

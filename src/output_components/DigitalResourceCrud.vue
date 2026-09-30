@@ -98,19 +98,14 @@
           
           </div>
         <div class="form-control w-full mb-4">
-        <div class="flex flex-row items-center">  
-        <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('recordInformation.country', 'country') }}</span><span class="text-accent font-black">*</span></label>
-
-          <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('recordInformation.country', 'Country in which the head office of the organisation that maintains this record is based.', 'doc')" v-if="getLabel('recordInformation.country', 'Country in which the head office of the organisation that maintains this record is based.', 'doc')">
-                <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
-              <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" 
-                          fill="currentColor"
-                          stroke-width="2.5"
-                          stroke="currentColor"
-                          class="size-[1.2em] primary-content"><path  d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
-                </button>
-              </div>
-              </div>
+          <div class="flex flex-row items-center">  
+            <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('recordInformation.country', 'country') }}</span><span class="text-accent font-black">*</span></label>
+            <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('recordInformation.country', 'Country in which the head office of the organisation that maintains this record is based.', 'doc')" v-if="getLabel('recordInformation.country', 'Country in which the head office of the organisation that maintains this record is based.', 'doc')">
+              <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
+                <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" fill="currentColor" stroke-width="2.5" stroke="currentColor" class="size-[1.2em] primary-content"><path d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
+              </button>
+            </div>
+          </div>
           <select v-model="form['recordInformation.country']" class="select select-bordered w-full">
             <option disabled value="">{{ currentLocale === 'de' ? getLabel('recordInformation.country', 'country') + ' ' + t('select') : t('select') + ' ' + getLabel('recordInformation.country', 'country') }}</option>
             <template v-if="currentLocale === 'de'">
@@ -759,19 +754,14 @@
       
     </div>
         <div class="form-control w-full mb-4">
-        <div class="flex flex-row items-center">  
-        <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('recordInformation.metadataRights', 'metadataRights') }}</span><span class="text-accent font-black">*</span></label>
-
-          <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('recordInformation.metadataRights', 'Licence for the use of these metadata – not for the digital resource itself (see \'Rights\' below).', 'doc')" v-if="getLabel('recordInformation.metadataRights', 'Licence for the use of these metadata – not for the digital resource itself (see \'Rights\' below).', 'doc')">
-                <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
-              <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" 
-                          fill="currentColor"
-                          stroke-width="2.5"
-                          stroke="currentColor"
-                          class="size-[1.2em] primary-content"><path  d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
-                </button>
-              </div>
-              </div>
+          <div class="flex flex-row items-center">  
+            <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('recordInformation.metadataRights', 'metadataRights') }}</span><span class="text-accent font-black">*</span></label>
+            <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('recordInformation.metadataRights', 'Licence for the use of these metadata – not for the digital resource itself (see \'Rights\' below).', 'doc')" v-if="getLabel('recordInformation.metadataRights', 'Licence for the use of these metadata – not for the digital resource itself (see \'Rights\' below).', 'doc')">
+              <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
+                <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" fill="currentColor" stroke-width="2.5" stroke="currentColor" class="size-[1.2em] primary-content"><path d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
+              </button>
+            </div>
+          </div>
           <select v-model="form['recordInformation.metadataRights']" class="select select-bordered w-full">
             <option disabled value="">{{ currentLocale === 'de' ? getLabel('recordInformation.metadataRights', 'metadataRights') + ' ' + t('select') : t('select') + ' ' + getLabel('recordInformation.metadataRights', 'metadataRights') }}</option>
             <template v-if="currentLocale === 'de'">
@@ -974,19 +964,14 @@
           </div>
         </div>
         <div class="form-control w-full mb-4">
-        <div class="flex flex-row items-center">  
-        <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('type', 'type') }}</span><span class="text-accent font-black">*</span></label>
-
-          <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('type', 'The nature or genre of the digital resource. Select from 5 predefined values. For a 3D model: \'3D\'.', 'doc')" v-if="getLabel('type', 'The nature or genre of the digital resource. Select from 5 predefined values. For a 3D model: \'3D\'.', 'doc')">
-                <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
-              <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" 
-                          fill="currentColor"
-                          stroke-width="2.5"
-                          stroke="currentColor"
-                          class="size-[1.2em] primary-content"><path  d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
-                </button>
-              </div>
-              </div>
+          <div class="flex flex-row items-center">  
+            <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('type', 'type') }}</span><span class="text-accent font-black">*</span></label>
+            <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('type', 'The nature or genre of the digital resource. Select from 5 predefined values. For a 3D model: \'3D\'.', 'doc')" v-if="getLabel('type', 'The nature or genre of the digital resource. Select from 5 predefined values. For a 3D model: \'3D\'.', 'doc')">
+              <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
+                <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" fill="currentColor" stroke-width="2.5" stroke="currentColor" class="size-[1.2em] primary-content"><path d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
+              </button>
+            </div>
+          </div>
           <select v-model="form['type']" class="select select-bordered w-full">
             <option disabled value="">{{ currentLocale === 'de' ? getLabel('type', 'type') + ' ' + t('select') : t('select') + ' ' + getLabel('type', 'type') }}</option>
             <template v-if="currentLocale === 'de'">
@@ -1006,46 +991,116 @@
           </select>
           
         </div>
-        <div class="col-span-full border-2 border-base-200 bg-base-100 p-4 rounded-box mb-6 shadow-sm">
-          <div class="flex justify-between items-center mb-4 pb-2 border-b border-base-200">
-             <div class="flex flex-row items-center">
-               <h4 class="font-bold text-lg capitalize text-base-content/60">{{ getLabel('format', 'format') }}<span class="text-accent font-black">*</span></h4>
-               <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('format', 'The file format of the resource. Recommendation: use a controlled vocabulary, such as Internet Media Types (MIME).', 'doc')" v-if="getLabel('format', 'The file format of the resource. Recommendation: use a controlled vocabulary, such as Internet Media Types (MIME).', 'doc')">
-                    <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" 
-                              fill="currentColor"
-                              stroke-width="2.5"
-                              stroke="currentColor"
-                              class="size-[1.2em] primary-content"><path  d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
-                  </button>
-                  </div>
-             </div>
-             <button type="button" class="btn btn-sm btn-primary" @click.prevent="if(!form['format']) form['format'] = []; form['format'].push(''); inlineEditing['format_' + (form['format'].length - 1)] = true;">{{ currentLocale === 'de' ? getLabel('format', 'format') + ' ' + t('add') : t('add') + ' ' + getLabel('format', 'format') }}</button>
+        <div class="form-control w-full mb-4">
+          <div class="flex flex-row items-center">  
+            <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('format', 'format') }}</span><span class="text-accent font-black">*</span></label>
+            <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('format', 'The file format of the resource. Recommendation: use a controlled vocabulary, such as Internet Media Types (MIME).', 'doc')" v-if="getLabel('format', 'The file format of the resource. Recommendation: use a controlled vocabulary, such as Internet Media Types (MIME).', 'doc')">
+              <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
+                <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" fill="currentColor" stroke-width="2.5" stroke="currentColor" class="size-[1.2em] primary-content"><path d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2 p-2 input input-bordered h-auto min-h-[3rem] items-center w-full">
+            <div v-for="(val, kIdx) in form['format']" :key="kIdx" class="badge badge-primary gap-1 p-3">
+              {{ val }}
+              <svg @click.prevent="form['format'].splice(kIdx, 1)" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-4 h-4 stroke-current cursor-pointer hover:text-base-100/50 transition-colors">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </div>
+            <select class="select select-sm flex-1 min-w-[150px] border-none bg-base-100 outline-none focus:outline-none focus:ring-0 text-base-content cursor-pointer"
+              @change="if($event.target.value){ if(!form['format']) form['format'] = []; if(!form['format'].includes($event.target.value)) form['format'].push($event.target.value); $event.target.value=''; }">
+              <option disabled selected value="">{{ currentLocale === 'de' ? getLabel('format', 'format') + ' ' + t('select') : t('select') + ' ' + getLabel('format', 'format') }}</option>
+              <template v-if="currentLocale === 'de'">
+                <option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000570.shtml">3D Manufacturing Format (3MF)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000495.shtml">3D PDF</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000566.shtml">3D Studio Max (3DS)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000578.shtml">Adobe Photoshop Document (PSD)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000599.shtml">Alibre Design Model (AD_PRT)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000600.shtml">Amira Mesh (AM)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000560.shtml">AutoCAD Drawing (DWG)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000561.shtml">AutoCAD Drawing Exchange Format (DXF), ASCII</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000562.shtml">AutoCAD Drawing Exchange Format (DXF), Binary</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000565.shtml">Autodesk 3ds Max Design (MAX)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000601.shtml">Autodesk Inventor Assembly (IAM)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000602.shtml">Autodesk Inventor Part (IPT)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000603.shtml">Autodesk Navisworks (NWD)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000604.shtml">Autodesk Revit (RVT)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000567.shtml">Blender 3D Document (BLEND)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000605.shtml">CATIA Part File (CATPart)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000568.shtml">COLLADA</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000563.shtml">Design Web Format (DWF)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000564.shtml">Design Web Format XPS (DWFx)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000572.shtml">FilmBox (FBX), ASCII</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000573.shtml">FilmBox (FBX), Binary</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000569.shtml">GL Transmission Format (glTF)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000574.shtml">IGES Drawing Format (IGS)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000575.shtml">Industry Foundation Classes (IFC)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000606.shtml">MicroStation Design (DGN)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000607.shtml">Open Inventor 3D (IV)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000579.shtml">OpenUSD / Universal Scene Description (USD)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000583.shtml">Polygon File Format (PLY), ASCII</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000584.shtml">Polygon File Format (PLY), Binary</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000608.shtml">PTC Creo Part (PRT)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000576.shtml">Rhinoceros 3D (3DM)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000577.shtml">SketchUp Model (SKP)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000609.shtml">SolidWorks Assembly (SLDASM)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000610.shtml">SolidWorks Part (SLDPRT)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000580.shtml">Standard for the Exchange of Product Model Data (STEP)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000581.shtml">Stereolithography (STL), ASCII</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000582.shtml">Stereolithography (STL), Binary</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000585.shtml">Universal 3D (U3D)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000586.shtml">Virtual Reality Modeling Language (VRML)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000508.shtml">Wavefront Material Template Library (MTL)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000507.shtml">Wavefront OBJ</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000587.shtml">X3D</option>
+              </template>
+              <template v-else>
+                <option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000570.shtml">3D Manufacturing Format (3MF)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000495.shtml">3D PDF</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000566.shtml">3D Studio Max (3DS)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000578.shtml">Adobe Photoshop Document (PSD)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000599.shtml">Alibre Design Model (AD_PRT)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000600.shtml">Amira Mesh (AM)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000560.shtml">AutoCAD Drawing (DWG)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000561.shtml">AutoCAD Drawing Exchange Format (DXF), ASCII</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000562.shtml">AutoCAD Drawing Exchange Format (DXF), Binary</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000565.shtml">Autodesk 3ds Max Design (MAX)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000601.shtml">Autodesk Inventor Assembly (IAM)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000602.shtml">Autodesk Inventor Part (IPT)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000603.shtml">Autodesk Navisworks (NWD)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000604.shtml">Autodesk Revit (RVT)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000567.shtml">Blender 3D Document (BLEND)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000605.shtml">CATIA Part File (CATPart)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000568.shtml">COLLADA</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000563.shtml">Design Web Format (DWF)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000564.shtml">Design Web Format XPS (DWFx)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000572.shtml">FilmBox (FBX), ASCII</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000573.shtml">FilmBox (FBX), Binary</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000569.shtml">GL Transmission Format (glTF)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000574.shtml">IGES Drawing Format (IGS)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000575.shtml">Industry Foundation Classes (IFC)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000606.shtml">MicroStation Design (DGN)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000607.shtml">Open Inventor 3D (IV)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000579.shtml">OpenUSD / Universal Scene Description (USD)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000583.shtml">Polygon File Format (PLY), ASCII</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000584.shtml">Polygon File Format (PLY), Binary</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000608.shtml">PTC Creo Part (PRT)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000576.shtml">Rhinoceros 3D (3DM)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000577.shtml">SketchUp Model (SKP)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000609.shtml">SolidWorks Assembly (SLDASM)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000610.shtml">SolidWorks Part (SLDPRT)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000580.shtml">Standard for the Exchange of Product Model Data (STEP)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000581.shtml">Stereolithography (STL), ASCII</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000582.shtml">Stereolithography (STL), Binary</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000585.shtml">Universal 3D (U3D)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000586.shtml">Virtual Reality Modeling Language (VRML)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000508.shtml">Wavefront Material Template Library (MTL)</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000507.shtml">Wavefront OBJ</option>
+<option value="https://www.loc.gov/preservation/digital/formats/fdd/fdd000587.shtml">X3D</option>
+              </template>
+            </select>
           </div>
           
-          <ul class="list bg-base-100 rounded-box shadow-md w-full">
-             
-             <li v-for="(subItem, subIdx) in form['format']" :key="subIdx" class="list-row flex items-center justify-between h-auto py-2">
-                <div v-if="!inlineEditing['format_' + subIdx]">{{ subItem }}</div>
-                 <div v-else class="flex-1 mr-4">
-                   <input type="text"   required     v-model="form['format'][subIdx]" class="input input-sm input-bordered w-full validator " :placeholder="getLabel('format', 'e.g. Model: OBJ + MTL; texture: JPEG', 'plac')" />
-                   <div class="validator-hint text-xs mt-1">Enter valid value</div>
-                 </div>
-                <div class="flex gap-1 shrink-0">
-                   <button type="button" @click.prevent="inlineEditing['format_' + subIdx] = !inlineEditing['format_' + subIdx]" class="btn btn-square btn-ghost" :class="inlineEditing['format_' + subIdx] ? 'text-success' : 'text-info'">
-                   <svg v-if="!inlineEditing['format_' + subIdx]" class="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/></svg>
-                   <svg v-else class="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                 </button>
-                   <button type="button" @click.prevent="removeDrawerItem('format', subIdx)" class="btn btn-square btn-ghost text-error">
-                     <svg class="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
-                   </button>
-                </div>
-             </li>
-             
-             <li v-if="!form['format'] || form['format'].length === 0" class="p-4 text-center text-sm text-base-content/40 italic">
-                {{ t('noItems') }}
-             </li>
-          </ul>
         </div>
         <div class="form-control w-full mb-4">
         <div class="flex flex-row items-center">
@@ -1284,19 +1339,14 @@
           
           </div>
         <div class="form-control w-full mb-4">
-        <div class="flex flex-row items-center">  
-        <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('rights.accessRights', 'accessRights') }}</span><span class="text-accent font-black">*</span></label>
-
-          <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('rights.accessRights', 'A statement about the access rights to this digital resource.', 'doc')" v-if="getLabel('rights.accessRights', 'A statement about the access rights to this digital resource.', 'doc')">
-                <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
-              <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" 
-                          fill="currentColor"
-                          stroke-width="2.5"
-                          stroke="currentColor"
-                          class="size-[1.2em] primary-content"><path  d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
-                </button>
-              </div>
-              </div>
+          <div class="flex flex-row items-center">  
+            <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('rights.accessRights', 'accessRights') }}</span><span class="text-accent font-black">*</span></label>
+            <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('rights.accessRights', 'A statement about the access rights to this digital resource.', 'doc')" v-if="getLabel('rights.accessRights', 'A statement about the access rights to this digital resource.', 'doc')">
+              <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
+                <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" fill="currentColor" stroke-width="2.5" stroke="currentColor" class="size-[1.2em] primary-content"><path d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
+              </button>
+            </div>
+          </div>
           <select v-model="form['rights.accessRights']" class="select select-bordered w-full">
             <option disabled value="">{{ currentLocale === 'de' ? getLabel('rights.accessRights', 'accessRights') + ' ' + t('select') : t('select') + ' ' + getLabel('rights.accessRights', 'accessRights') }}</option>
             <template v-if="currentLocale === 'de'">
@@ -1328,19 +1378,14 @@
           
         </div>
         <div class="form-control w-full mb-4">
-        <div class="flex flex-row items-center">  
-        <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('rights.licence', 'licence') }}</span><span class="text-accent font-black">*</span></label>
-
-          <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('rights.licence', 'A URI indicating a licence or conditions for the use of this digital resource.', 'doc')" v-if="getLabel('rights.licence', 'A URI indicating a licence or conditions for the use of this digital resource.', 'doc')">
-                <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
-              <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" 
-                          fill="currentColor"
-                          stroke-width="2.5"
-                          stroke="currentColor"
-                          class="size-[1.2em] primary-content"><path  d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
-                </button>
-              </div>
-              </div>
+          <div class="flex flex-row items-center">  
+            <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('rights.licence', 'licence') }}</span><span class="text-accent font-black">*</span></label>
+            <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('rights.licence', 'A URI indicating a licence or conditions for the use of this digital resource.', 'doc')" v-if="getLabel('rights.licence', 'A URI indicating a licence or conditions for the use of this digital resource.', 'doc')">
+              <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
+                <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" fill="currentColor" stroke-width="2.5" stroke="currentColor" class="size-[1.2em] primary-content"><path d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
+              </button>
+            </div>
+          </div>
           <select v-model="form['rights.licence']" class="select select-bordered w-full">
             <option disabled value="">{{ currentLocale === 'de' ? getLabel('rights.licence', 'licence') + ' ' + t('select') : t('select') + ' ' + getLabel('rights.licence', 'licence') }}</option>
             <template v-if="currentLocale === 'de'">
@@ -1794,19 +1839,14 @@
           
           </div>
         <div class="form-control w-full mb-4">
-        <div class="flex flex-row items-center">  
-        <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('recordInformation.creation.contacts.role', 'role') }}</span><span class="text-warning font-black">~</span></label>
-
-          <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('recordInformation.creation.contacts.role', 'Role of the person in the project or institution.', 'doc')" v-if="getLabel('recordInformation.creation.contacts.role', 'Role of the person in the project or institution.', 'doc')">
-                <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
-              <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" 
-                          fill="currentColor"
-                          stroke-width="2.5"
-                          stroke="currentColor"
-                          class="size-[1.2em] primary-content"><path  d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
-                </button>
-              </div>
-              </div>
+          <div class="flex flex-row items-center">  
+            <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('recordInformation.creation.contacts.role', 'role') }}</span><span class="text-warning font-black">~</span></label>
+            <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('recordInformation.creation.contacts.role', 'Role of the person in the project or institution.', 'doc')" v-if="getLabel('recordInformation.creation.contacts.role', 'Role of the person in the project or institution.', 'doc')">
+              <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
+                <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" fill="currentColor" stroke-width="2.5" stroke="currentColor" class="size-[1.2em] primary-content"><path d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
+              </button>
+            </div>
+          </div>
           <select v-model="drawerForm['role']" class="select select-bordered w-full">
             <option disabled value="">{{ currentLocale === 'de' ? getLabel('recordInformation.creation.contacts.role', 'role') + ' ' + t('select') : t('select') + ' ' + getLabel('recordInformation.creation.contacts.role', 'role') }}</option>
             <template v-if="currentLocale === 'de'">
@@ -1824,7 +1864,7 @@
         </div>
         <div class="form-control w-full mb-4">
         <div class="flex flex-row items-center">
-          <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('recordInformation.creation.contacts.organization', 'organization') }}</span><span class="text-accent font-black">*</span></label>
+          <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('recordInformation.creation.contacts.organization', 'organization') }}</span><span class="text-warning font-black">~</span></label>
           
           <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('recordInformation.creation.contacts.organization', 'Organisation to which the contact person belongs.', 'doc')" v-if="getLabel('recordInformation.creation.contacts.organization', 'Organisation to which the contact person belongs.', 'doc')">
                 <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
@@ -1836,7 +1876,7 @@
               </button>
               </div>
               </div>
-                        <input type="text"     required v-model="drawerForm['organization']" class="input input-bordered w-full validator " :placeholder="getLabel('recordInformation.creation.contacts.organization', 'e.g. Stiftung Preußischer Kulturbesitz, Staatliche Museen zu Berlin', 'plac')" />
+                        <input type="text"      v-model="drawerForm['organization']" class="input input-bordered w-full validator " :placeholder="getLabel('recordInformation.creation.contacts.organization', 'e.g. Stiftung Preußischer Kulturbesitz, Staatliche Museen zu Berlin', 'plac')" />
               <div class="validator-hint">{{t('validationHint')}}</div>        
           
           </div>
@@ -1949,19 +1989,14 @@
           
           </div>
         <div class="form-control w-full mb-4">
-        <div class="flex flex-row items-center">  
-        <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('recordInformation.creation.contacts.address.country', 'country') }}</span></label>
-
-          <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('recordInformation.creation.contacts.address.country', '', 'doc')" v-if="getLabel('recordInformation.creation.contacts.address.country', '', 'doc')">
-                <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
-              <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" 
-                          fill="currentColor"
-                          stroke-width="2.5"
-                          stroke="currentColor"
-                          class="size-[1.2em] primary-content"><path  d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
-                </button>
-              </div>
-              </div>
+          <div class="flex flex-row items-center">  
+            <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('recordInformation.creation.contacts.address.country', 'country') }}</span></label>
+            <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('recordInformation.creation.contacts.address.country', '', 'doc')" v-if="getLabel('recordInformation.creation.contacts.address.country', '', 'doc')">
+              <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
+                <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" fill="currentColor" stroke-width="2.5" stroke="currentColor" class="size-[1.2em] primary-content"><path d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
+              </button>
+            </div>
+          </div>
           <select v-model="drawerForm['address.country']" class="select select-bordered w-full">
             <option disabled value="">{{ currentLocale === 'de' ? getLabel('recordInformation.creation.contacts.address.country', 'country') + ' ' + t('select') : t('select') + ' ' + getLabel('recordInformation.creation.contacts.address.country', 'country') }}</option>
             <template v-if="currentLocale === 'de'">
@@ -2555,41 +2590,71 @@
           
           </div>
         <div class="form-control w-full mb-4">
-        <div class="flex flex-row items-center">
-          <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('actors.actorType', 'actorType') }}</span><span class="text-accent font-black">*</span></label>
-          
-          <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('actors.actorType', 'Classification of the actor: individual or organisation.', 'doc')" v-if="getLabel('actors.actorType', 'Classification of the actor: individual or organisation.', 'doc')">
-                <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
-              <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" 
-                          fill="currentColor"
-                          stroke-width="2.5"
-                          stroke="currentColor"
-                          class="size-[1.2em] primary-content"><path  d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
+          <div class="flex flex-row items-center">  
+            <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('actors.actorType', 'actorType') }}</span><span class="text-accent font-black">*</span></label>
+            <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('actors.actorType', 'Classification of the actor: individual or organisation.', 'doc')" v-if="getLabel('actors.actorType', 'Classification of the actor: individual or organisation.', 'doc')">
+              <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
+                <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" fill="currentColor" stroke-width="2.5" stroke="currentColor" class="size-[1.2em] primary-content"><path d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
               </button>
-              </div>
-              </div>
-                        <input type="text"     required v-model="drawerForm['actorType']" class="input input-bordered w-full validator " :placeholder="getLabel('actors.actorType', 'e.g. individual | organization', 'plac')" />
-              <div class="validator-hint">{{t('validationHint')}}</div>        
-          
+            </div>
           </div>
+          <div class="flex flex-wrap gap-2 p-2 input input-bordered h-auto min-h-[3rem] items-center w-full">
+            <div v-for="(val, kIdx) in drawerForm['actorType']" :key="kIdx" class="badge badge-primary gap-1 p-3">
+              {{ val }}
+              <svg @click.prevent="drawerForm['actorType'].splice(kIdx, 1)" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-4 h-4 stroke-current cursor-pointer hover:text-base-100/50 transition-colors">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </div>
+            <select class="select select-sm flex-1 min-w-[150px] border-none bg-base-100 outline-none focus:outline-none focus:ring-0 text-base-content cursor-pointer"
+              @change="if($event.target.value){ if(!drawerForm['actorType']) drawerForm['actorType'] = []; if(!drawerForm['actorType'].includes($event.target.value)) drawerForm['actorType'].push($event.target.value); $event.target.value=''; }">
+              <option disabled selected value="">{{ currentLocale === 'de' ? getLabel('actors.actorType', 'actorType') + ' ' + t('select') : t('select') + ' ' + getLabel('actors.actorType', 'actorType') }}</option>
+              <template v-if="currentLocale === 'de'">
+                <option value="group">group</option>
+<option value="individual">individual</option>
+<option value="organization">organization</option>
+              </template>
+              <template v-else>
+                <option value="group">group</option>
+<option value="individual">individual</option>
+<option value="organization">organization</option>
+              </template>
+            </select>
+          </div>
+          
+        </div>
         <div class="form-control w-full mb-4">
-        <div class="flex flex-row items-center">
-          <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('actors.roles', 'roles') }}</span><span class="text-accent font-black">*</span></label>
-          
-          <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('actors.roles', 'Role(s) of the person or organisation in creating this digital resource. An actor can have multiple roles.', 'doc')" v-if="getLabel('actors.roles', 'Role(s) of the person or organisation in creating this digital resource. An actor can have multiple roles.', 'doc')">
-                <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
-              <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" 
-                          fill="currentColor"
-                          stroke-width="2.5"
-                          stroke="currentColor"
-                          class="size-[1.2em] primary-content"><path  d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
+          <div class="flex flex-row items-center">  
+            <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('actors.roles', 'roles') }}</span><span class="text-accent font-black">*</span></label>
+            <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('actors.roles', 'Role(s) of the person or organisation in creating this digital resource. An actor can have multiple roles.', 'doc')" v-if="getLabel('actors.roles', 'Role(s) of the person or organisation in creating this digital resource. An actor can have multiple roles.', 'doc')">
+              <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
+                <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" fill="currentColor" stroke-width="2.5" stroke="currentColor" class="size-[1.2em] primary-content"><path d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
               </button>
-              </div>
-              </div>
-                        <input type="text"     required v-model="drawerForm['roles']" class="input input-bordered w-full validator " :placeholder="getLabel('actors.roles', 'e.g. 3D Data Acquisition Lead | Data Processing', 'plac')" />
-              <div class="validator-hint">{{t('validationHint')}}</div>        
-          
+            </div>
           </div>
+          <div class="flex flex-wrap gap-2 p-2 input input-bordered h-auto min-h-[3rem] items-center w-full">
+            <div v-for="(val, kIdx) in drawerForm['roles']" :key="kIdx" class="badge badge-primary gap-1 p-3">
+              {{ val }}
+              <svg @click.prevent="drawerForm['roles'].splice(kIdx, 1)" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-4 h-4 stroke-current cursor-pointer hover:text-base-100/50 transition-colors">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </div>
+            <select class="select select-sm flex-1 min-w-[150px] border-none bg-base-100 outline-none focus:outline-none focus:ring-0 text-base-content cursor-pointer"
+              @change="if($event.target.value){ if(!drawerForm['roles']) drawerForm['roles'] = []; if(!drawerForm['roles'].includes($event.target.value)) drawerForm['roles'].push($event.target.value); $event.target.value=''; }">
+              <option disabled selected value="">{{ currentLocale === 'de' ? getLabel('actors.roles', 'roles') + ' ' + t('select') : t('select') + ' ' + getLabel('actors.roles', 'roles') }}</option>
+              <template v-if="currentLocale === 'de'">
+                <option value="Creator">Creator</option>
+<option value="Ersteller">Ersteller</option>
+<option value="Skulpteur">Skulpteur</option>
+              </template>
+              <template v-else>
+                <option value="Compiler">Compiler</option>
+<option value="Creator">Creator</option>
+<option value="Sculptor">Sculptor</option>
+              </template>
+            </select>
+          </div>
+          
+        </div>
         <div class="col-span-full border border-base-300 bg-base-100/50 p-5 rounded-box mb-6 mt-2">
         <div class=" items-center flex flex-row">
           <label class="label mb-2 pb-0">
@@ -2735,19 +2800,14 @@
           
           </div>
         <div class="form-control w-full mb-4">
-        <div class="flex flex-row items-center">  
-        <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('actors.contacts.address.country', 'country') }}</span></label>
-
-          <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('actors.contacts.address.country', 'Country of the actor\'s address.', 'doc')" v-if="getLabel('actors.contacts.address.country', 'Country of the actor\'s address.', 'doc')">
-                <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
-              <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" 
-                          fill="currentColor"
-                          stroke-width="2.5"
-                          stroke="currentColor"
-                          class="size-[1.2em] primary-content"><path  d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
-                </button>
-              </div>
-              </div>
+          <div class="flex flex-row items-center">  
+            <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('actors.contacts.address.country', 'country') }}</span></label>
+            <div @click.stop.prevent class="tooltip tooltip-accent tooltip-right" :data-tip="getLabel('actors.contacts.address.country', 'Country of the actor\'s address.', 'doc')" v-if="getLabel('actors.contacts.address.country', 'Country of the actor\'s address.', 'doc')">
+              <button class="btn btn-circle w-6 h-6 p-1 cursor-help">
+                <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512" fill="currentColor" stroke-width="2.5" stroke="currentColor" class="size-[1.2em] primary-content"><path d="M256 0c70.69 0 134.69 28.66 181.02 74.98C483.34 121.3 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.69 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.69 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm-9.96 161.03c0-4.28.76-8.26 2.27-11.91 1.5-3.63 3.77-6.94 6.79-9.91 3-2.95 6.29-5.2 9.84-6.7 3.57-1.5 7.41-2.28 11.52-2.28 4.12 0 7.96.78 11.49 2.27 3.54 1.51 6.78 3.76 9.75 6.73 2.95 2.97 5.16 6.26 6.64 9.91 1.49 3.63 2.22 7.61 2.22 11.89 0 4.17-.73 8.08-2.21 11.69-1.48 3.6-3.68 6.94-6.65 9.97-2.94 3.03-6.18 5.32-9.72 6.84-3.54 1.51-7.38 2.29-11.52 2.29-4.22 0-8.14-.76-11.75-2.26-3.58-1.51-6.86-3.79-9.83-6.79-2.94-3.02-5.16-6.34-6.63-9.97-1.48-3.62-2.21-7.54-2.21-11.77zm13.4 178.16c-1.11 3.97-3.35 11.76 3.3 11.76 1.44 0 3.27-.81 5.46-2.4 2.37-1.71 5.09-4.31 8.13-7.75 3.09-3.5 6.32-7.65 9.67-12.42 3.33-4.76 6.84-10.22 10.49-16.31.37-.65 1.23-.87 1.89-.48l12.36 9.18c.6.43.73 1.25.35 1.86-5.69 9.88-11.44 18.51-17.26 25.88-5.85 7.41-11.79 13.57-17.8 18.43l-.1.06c-6.02 4.88-12.19 8.55-18.51 11.01-17.58 6.81-45.36 5.7-53.32-14.83-5.02-12.96-.9-27.69 3.06-40.37l19.96-60.44c1.28-4.58 2.89-9.62 3.47-14.33.97-7.87-2.49-12.96-11.06-12.96h-17.45c-.76 0-1.38-.62-1.38-1.38l.08-.48 4.58-16.68c.16-.62.73-1.04 1.35-1.02l89.12-2.79c.76-.03 1.41.57 1.44 1.33l-.07.43-37.76 124.7zm158.3-244.93c-41.39-41.39-98.58-67-161.74-67-63.16 0-120.35 25.61-161.74 67-41.39 41.39-67 98.58-67 161.74 0 63.16 25.61 120.35 67 161.74 41.39 41.39 98.58 67 161.74 67 63.16 0 120.35-25.61 161.74-67 41.39-41.39 67-98.58 67-161.74 0-63.16-25.61-120.35-67-161.74z"/></svg>
+              </button>
+            </div>
+          </div>
           <select v-model="drawerForm['contacts.address.country']" class="select select-bordered w-full">
             <option disabled value="">{{ currentLocale === 'de' ? getLabel('actors.contacts.address.country', 'country') + ' ' + t('select') : t('select') + ' ' + getLabel('actors.contacts.address.country', 'country') }}</option>
             <template v-if="currentLocale === 'de'">
@@ -3269,17 +3329,6 @@
           </div>
           
         </div></div>
-      </div>
-      <div v-if="activeDrawerField === 'format'">
-        
-          <div class="form-control w-full">
-             <label class="label"><span class="label-text font-bold capitalize">{{ getLabel('format', 'format') }}</span><span class="text-accent font-black">*</span></label>
-             <input type="text" v-model="drawerForm['_value']" class="input input-bordered w-full mb-4" :placeholder="getLabel('format', '', 'plac')"/>
-          </div>
-          
-          <div class="form-control w-full">
-             <label class="label"><span class="label-text font-bold capitalize">lang</span></label>
-               <input type="text" v-model="drawerForm['#lang']" class="input input-bordered w-full" placeholder="lang" /></div>
       </div>
       <div v-if="activeDrawerField === 'publicationStatement'">
         <div class="grid grid-cols-1 gap-x-6">

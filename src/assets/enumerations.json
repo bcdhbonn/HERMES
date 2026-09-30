@@ -67,7 +67,43 @@
       "Curator": "Curator"
     }
   },
+  "heritageAssetIdentification.actors.actorType": {
+    "de": {
+      "Individuum": "Individuum",
+      "Gruppe": "Gruppe",
+      "Organisation": "Organisation"
+    },
+    "en": {
+      "Individual": "Individual",
+      "Group": "Group",
+      "Organization": "Organization"
+    }
+  },
   "heritageAssetIdentification.actors.roles": {
+    "de": {
+      "Creator": "Creator",
+      "Ersteller": "Ersteller",
+      "Skulpteur": "Skulpteur"
+    },
+    "en": {
+      "Creator": "Creator",
+      "Compiler": "Compiler",
+      "Sculptor": "Sculptor"
+    }
+  },
+  "digitalResource.actors.roles": {
+    "de": {
+      "Creator": "Creator",
+      "Ersteller": "Ersteller",
+      "Skulpteur": "Skulpteur"
+    },
+    "en": {
+      "Creator": "Creator",
+      "Compiler": "Compiler",
+      "Sculptor": "Sculptor"
+    }
+  },
+  "activity.actors.roles": {
     "de": {
       "Creator": "Creator",
       "Ersteller": "Ersteller",
@@ -491,7 +527,7 @@
       "Spanish": "es"
     }
   },
-  "digitalResource.format": {
+  "format": {
     "de": {
       "3D Manufacturing Format (3MF)": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000570.shtml",
       "3D PDF": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000495.shtml",
