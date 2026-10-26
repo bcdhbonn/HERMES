@@ -696,7 +696,7 @@
           <span class="select-none mb-2" v-html="lang.svg"></span>
           <span class="text-xs font-bold uppercase tracking-wider text-base-content/60">{{ lang.code }}</span>
 
-          <button @click.stop="setPreferredLang('recordInformation.language', lang.code, false)"
+          <button type="button" @click.stop="setPreferredLang('recordInformation.language', lang.code, false)"
               class="btn btn-circle btn-ghost btn-xs absolute right-1 top-1 transition-opacity" 
               :class="[
                   preferredLanguages['recordInformation.language'] === lang.code

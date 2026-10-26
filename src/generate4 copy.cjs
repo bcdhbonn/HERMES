@@ -445,7 +445,7 @@ function generateVueCRUD(dictionary = {}, enumerations = {}) {
           <span class="select-none mb-2" v-html="lang.svg"></span>
           <span class="text-xs font-bold uppercase tracking-wider text-base-content/60">{{ lang.code }}</span>
 
-          <button @click.stop="setPreferredLang('${modelPath}', lang.code, ${isDrawer})"
+          <button type="button" @click.stop="setPreferredLang('${modelPath}', lang.code, ${isDrawer})"
               class="btn btn-circle btn-ghost btn-xs absolute right-1 top-1 transition-opacity" 
               :class="[
                   preferredLanguages['${modelPath}'] === lang.code
